@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "What scientific instrument left on the Moon by Apollo 11 is still used by Earth observatories today to bounce laser beams?",
+    "options": [
+      "The Cosmic Ray Telescope",
+      "The Laser Ranging Retroreflector (LRRR)",
+      "The Saturn V Ascent Radar",
+      "The Deep Space Radio Transmitter"
+    ],
+    "correctIndex": 1,
+    "topic": "Scientific Discoveries",
+    "relatedArtifact": "apollo-11-lm-descent",
+    "explanation": "Buzz Aldrin placed the Laser Ranging Retroreflector on the lunar surface. By timing laser pulses fired from Earth that bounce off its corner quartz prisms, scientists proved the Moon is drifting away by 3.8 cm (1.5 inches) every year!",
+    "nasaSourceUrl": "https://www.nasa.gov/mission/apollo-11/",
+    "nasaSourceLabel": "NASA Apollo 11 Lunar Laser Ranging Experiment"
+  },
+  {
+    "id": 2,
+    "question": "Why did the Apollo 11 Lunar Module Descent Stage remain behind on the Moon when Neil Armstrong and Buzz Aldrin flew home?",
+    "options": [
+      "It ran out of battery power and broke down",
+      "It was designed as the rigid launch platform for the Ascent Stage cockpit to blast off from",
+      "NASA forgot the keys to restart its engine",
+      "It was too heavy to fit back into the Saturn V rocket"
+    ],
+    "correctIndex": 1,
+    "topic": "Equipment Purpose",
+    "relatedArtifact": "apollo-11-lm-descent",
+    "explanation": "The Lunar Module was built in two parts: the Descent Stage fired its rocket to land gently, and then served as the sturdy launch pad from which the Ascent Stage rocketed back into lunar orbit.",
+    "nasaSourceUrl": "https://www.nasa.gov/mission/apollo-11/",
+    "nasaSourceLabel": "NASA Apollo 11 Lunar Module Overview"
+  },
+  {
+    "id": 3,
+    "question": "What famous message is engraved on the stainless-steel plaque attached to Apollo 11's forward ladder strut?",
+    "options": [
+      "'One small step for man, one giant leap for mankind'",
+      "'We came in peace for all mankind'",
+      "'Property of the United States of America'",
+      "'To the Moon and the stars beyond'"
+    ],
+    "correctIndex": 1,
+    "topic": "Mission History",
+    "relatedArtifact": "apollo-11-lm-descent",
+    "explanation": "The plaque reads: 'Here men from the planet Earth first set foot upon the Moon July 1969, A.D. We came in peace for all mankind.' It remains untouched in the Sea of Tranquility.",
+    "nasaSourceUrl": "https://www.nasa.gov/history/alsj/a11/a11.html",
+    "nasaSourceLabel": "NASA Apollo Lunar Surface Journal Plaque Archive"
+  },
+  {
+    "id": 4,
+    "question": "Why were the wheels of the Apollo Lunar Roving Vehicle made of woven steel piano wire mesh instead of rubber tires?",
+    "options": [
+      "Rubber tires would melt or become brittle and shatter in the Moon's extreme temperature swings (-130°C to +120°C) and airless vacuum",
+      "Steel wire was much heavier and helped the rover stay on the ground",
+      "Rubber tires were too bouncy for astronauts to steer",
+      "NASA wanted the wheels to look like bicycle spokes"
+    ],
+    "correctIndex": 0,
+    "topic": "Equipment Purpose",
+    "relatedArtifact": "apollo-lrv",
+    "explanation": "Inflated rubber tires would burst in the vacuum of space, melt under the blistering 120°C daytime heat, or turn brittle and shatter in the deep -130°C lunar night. Woven zinc-coated steel wire with chevron treads provided flexibility and grip.",
+    "nasaSourceUrl": "https://www.nasa.gov/history/alsj/lrvhand.html",
+    "nasaSourceLabel": "NASA Lunar Roving Vehicle Operations Handbook"
+  },
+  {
+    "id": 5,
+    "question": "What ancient specimen collected by Apollo 15 astronauts using their Lunar Rover proved the Moon once had a global magma ocean?",
+    "options": [
+      "The Black Diamond of Descartes",
+      "The Genesis Rock (anorthosite dated to 4.1 billion years old)",
+      "The Shorty Crater Basalt Sphere",
+      "The Oceanus Procellarum Meteorite"
+    ],
+    "correctIndex": 1,
+    "topic": "Scientific Discoveries",
+    "relatedArtifact": "apollo-lrv",
+    "explanation": "Astronauts Dave Scott and Jim Irwin drove to Spur Crater and spotted the Genesis Rock. Its pure plagioclase feldspar composition proved that the early Moon's surface was molten magma, where lighter crystals floated to the top to form the crust.",
+    "nasaSourceUrl": "https://www.nasa.gov/history/alsj/a15/a15.html",
+    "nasaSourceLabel": "NASA Apollo 15 Genesis Rock Science Summary"
+  },
+  {
+    "id": 6,
+    "question": "Before leaving the Moon on Apollo 17, why did Commander Gene Cernan park the Lunar Rover one mile away from the lander?",
+    "options": [
+      "To save battery power for future astronauts",
+      "So its color television camera could point back and film the Lunar Module blasting off into space live for Earth",
+      "Because the rover got stuck in deep regolith dust",
+      "To keep it away from solar radiation"
+    ],
+    "correctIndex": 1,
+    "topic": "Mission Achievements",
+    "relatedArtifact": "apollo-lrv",
+    "explanation": "Gene Cernan parked LRV-003 facing the lander Challenger so the motorized RCA color TV camera could be remote-controlled from Houston to track and broadcast the ascent stage launch into orbit.",
+    "nasaSourceUrl": "https://www.nasa.gov/history/alsj/a17/a17.html",
+    "nasaSourceLabel": "NASA Apollo 17 Lunar Surface Excursions"
+  },
+  {
+    "id": 7,
+    "question": "What historic milestone did Viking 1 achieve on July 20, 1976?",
+    "options": [
+      "First spacecraft to bring Martian soil samples back to Earth",
+      "First successful long-duration soft landing on Mars by the United States",
+      "First spacecraft to discover frozen water ice under Martian soil",
+      "First craft to orbit all four gas giant planets"
+    ],
+    "correctIndex": 1,
+    "topic": "Mission History",
+    "relatedArtifact": "viking-1-lander",
+    "explanation": "On July 20, 1976 (exactly seven years after Apollo 11 landed on the Moon), Viking 1 touched down in Chryse Planitia, transmitting the very first color panoramas of Mars and operating for over six Earth years (2,245 sols).",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/viking-1",
+    "nasaSourceLabel": "NASA JPL Viking 1 Mission Milestone"
+  },
+  {
+    "id": 8,
+    "question": "Why did Viking 1's biology tests detect sudden gas releases from Martian soil even though there were no living microbes?",
+    "options": [
+      "The test chambers leaked air from Earth",
+      "Intense solar ultraviolet rays created non-biological chemical oxidants (perchlorates) in the unshielded Martian dust",
+      "Martian plant roots released carbon dioxide gas",
+      "The electronic sensors overheated in the sun"
+    ],
+    "correctIndex": 1,
+    "topic": "Scientific Discoveries",
+    "relatedArtifact": "viking-1-lander",
+    "explanation": "Mars has no ozone layer to block solar UV light, which creates aggressive chemical oxidants called perchlorates in the regolith. When damp nutrient broth was added, these chemical compounds broke down the nutrients without any living life involved.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/viking-1",
+    "nasaSourceLabel": "NASA JPL Viking Biology & Soil Chemistry Results"
+  },
+  {
+    "id": 9,
+    "question": "Where is the Viking 1 Lander located today, and what is its operational status?",
+    "options": [
+      "In Jezero Crater; currently active and transmitting weather",
+      "In Chryse Planitia ('Plains of Gold'); inactive since communication ended in November 1982",
+      "In Valles Marineris canyon; destroyed by a sandstorm in 1980",
+      "On the Martian North Polar Ice Cap; currently active"
+    ],
+    "correctIndex": 1,
+    "topic": "Current Location and Status",
+    "relatedArtifact": "viking-1-lander",
+    "explanation": "Viking 1 rests in Chryse Planitia (22.7° N, 48.0° W). It operated for 2,245 sols until November 11, 1982, when an unintended software command uplink inadvertently pointed its antenna away from Earth.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/viking-1",
+    "nasaSourceLabel": "NASA JPL Viking 1 Lander Status"
+  },
+  {
+    "id": 10,
+    "question": "What was special about Sojourner, which landed on Mars in 1997 with the Mars Pathfinder mission?",
+    "options": [
+      "It was the first wheeled robotic rover ever driven on another planet",
+      "It was powered by a miniature nuclear fusion reactor",
+      "It was the largest rover NASA ever constructed",
+      "It was the first drone helicopter to fly in alien skies"
+    ],
+    "correctIndex": 0,
+    "topic": "Mission History",
+    "relatedArtifact": "sojourner-rover",
+    "explanation": "Weighing only 11.5 kg (25.4 lbs) on Earth (and only 4.3 kg / 9.6 lbs in Mars gravity), microwave-sized Sojourner made cosmic history on July 5, 1997 when its six wheels rolled down Pathfinder's ramp, becoming the first wheeled mobile vehicle on another world.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner",
+    "nasaSourceLabel": "NASA JPL Sojourner Rover First Wheeled Vehicle"
+  },
+  {
+    "id": 11,
+    "question": "What patented 6-wheeled suspension system did Sojourner prove on Mars that NASA later used on Curiosity and Perseverance?",
+    "options": [
+      "The Hydraulic Air-Spring Suspension",
+      "The Rocker-Bogie Suspension",
+      "The Magnetic Levitation Track",
+      "The Independent Leaf-Spring Axle"
+    ],
+    "correctIndex": 1,
+    "topic": "Equipment Purpose",
+    "relatedArtifact": "sojourner-rover",
+    "explanation": "The Rocker-Bogie suspension uses zero metal springs. Its differential pivot distributes weight evenly across all six wheels, allowing rovers to climb over rocks twice their wheel diameter while cutting chassis tilt in half.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner",
+    "nasaSourceLabel": "NASA JPL Rocker-Bogie Suspension Mechanics"
+  },
+  {
+    "id": 12,
+    "question": "What scientific discovery did Sojourner make when it pressed its spectrometer against the Martian rock nicknamed 'Barnacle Bill'?",
+    "options": [
+      "The rock was made of pure gold ore",
+      "The rock was rich in silica (andesite-like), proving Mars experienced complex crustal volcanism similar to Earth",
+      "The rock contained fossilized ancient tree bark",
+      "The rock was a hollow geode filled with liquid water"
+    ],
+    "correctIndex": 1,
+    "topic": "Scientific Discoveries",
+    "relatedArtifact": "sojourner-rover",
+    "explanation": "Sojourner's Alpha Particle X-Ray Spectrometer (APXS) found that 'Barnacle Bill' had high silica content (andesite), showing that Martian rocks had undergone repeated melting and differentiation, much like continental volcanic rocks on Earth.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner",
+    "nasaSourceLabel": "NASA JPL APXS Barnacle Bill Analysis"
+  },
+  {
+    "id": 13,
+    "question": "How did the Mars Pathfinder lander safely survive touchdown on Mars without using heavy, expensive landing thrusters?",
+    "options": [
+      "It glided down on steerable nylon parachutes into a soft sand dune",
+      "It was enclosed in a cocoon of 24 giant Kevlar airbags and bounced up to 15 times before rolling to a stop",
+      "It was caught mid-air by a rocket-powered crane helicopter",
+      "It splashed down safely in an ancient crater lake"
+    ],
+    "correctIndex": 1,
+    "topic": "Equipment Purpose",
+    "relatedArtifact": "mars-pathfinder-lander",
+    "explanation": "Pathfinder pioneered the airbag landing concept: giant 24-lobe Kevlar airbags inflated around the tetrahedral lander seconds before impact, allowing it to bounce eighty feet high across Ares Vallis before deflating and unfolding.",
+    "nasaSourceUrl": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "nasaSourceLabel": "NASA Science - Mars Pathfinder Airbag Technology"
+  },
+  {
+    "id": 14,
+    "question": "What evidence did the Mars Pathfinder lander discover in Ares Vallis regarding the ancient history of Mars?",
+    "options": [
+      "Rounded stones and tilted boulders proving colossal catastrophic freshwater floods billions of years ago",
+      "Active geysers spewing water vapor into the atmosphere",
+      "Glaciers of frozen carbon dioxide covering the equator",
+      "A subterranean cave system with running rivers"
+    ],
+    "correctIndex": 0,
+    "topic": "Scientific Discoveries",
+    "relatedArtifact": "mars-pathfinder-lander",
+    "explanation": "Pathfinder's mast camera revealed imbricated (stacked and tilted) boulders aligned in the direction of ancient water currents, showing that Ares Vallis was carved by catastrophic mega-floods hundreds of times larger than the Amazon River.",
+    "nasaSourceUrl": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "nasaSourceLabel": "NASA Science - Ares Vallis Flood Geology"
+  },
+  {
+    "id": 15,
+    "question": "On August 25, 2012, Voyager 1 achieved a milestone never accomplished by any human machine before. What was it?",
+    "options": [
+      "It landed safely on the frozen surface of Pluto",
+      "It crossed the Heliopause and entered interstellar space beyond the Sun's magnetic bubble",
+      "It discovered a ninth planet in the Kuiper Belt",
+      "It returned to orbit around Saturn to inspect its rings"
+    ],
+    "correctIndex": 1,
+    "topic": "Current Location and Status",
+    "relatedArtifact": "voyager-1",
+    "explanation": "At a distance of 121 AU (18 billion km), Voyager 1 detected a sharp drop in solar particles and a fortyfold surge in galactic plasma, becoming the first human-made object in history to cross into interstellar space. It is Still Travelling today!",
+    "nasaSourceUrl": "https://voyager.jpl.nasa.gov/mission/interstellar-mission/",
+    "nasaSourceLabel": "NASA JPL Voyager Interstellar Crossing Announcement"
+  }
+]

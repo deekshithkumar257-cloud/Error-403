@@ -1,0 +1,116 @@
+/* ============================================================
+   NASA: ECHOES BEYOND EARTH - Keyframe Animations & Micro-interactions
+   ============================================================ */
+
+/* Radar Blink */
+@keyframes radarBlink {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+}
+
+/* Subtle Cosmic Float */
+@keyframes cosmicFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.anim-float {
+  animation: cosmicFloat 6s ease-in-out infinite;
+}
+
+/* Shimmer Light Sweep */
+@keyframes lightSweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #ffffff 0%, var(--cyan-glow) 50%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: lightSweep 4s linear infinite;
+}
+
+/* Pulsing Outer Glow */
+@keyframes outerGlowPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+  }
+}
+
+.anim-pulse-glow {
+  animation: outerGlowPulse 3s infinite;
+}
+
+/* Typing cursor blink */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background-color: var(--cyan-glow);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: cursorBlink 0.8s infinite;
+}
+
+/* Fade in up entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "moon",
+    "name": "The Moon",
+    "tagline": "The Airless Museum of Early Earth and Human Footprints",
+    "subtitle": "Humanity's First Extraterrestrial Stepping Stone",
+    "description": "Earth's only natural satellite. With no atmosphere, liquid water, or weather to erode its surface, every footprint, wheel tread, and descent stage left by NASA remains frozen in time—an untouchable cosmic time capsule preserved across billions of years.",
+    "distance": "384,400 km",
+    "travelTime": "~3 days (Apollo trajectory)",
+    "gravity": "1.62 m/s² (16.6% of Earth)",
+    "temperature": "-130°C to +120°C",
+    "atmosphere": "Near-vacuum (exosphere of argon, helium, neon)",
+    "color": "#94a3b8",
+    "accentColor": "#38bdf8",
+    "themeClass": "dest-moon",
+    "artifactsCount": 2,
+    "featuredArtifacts": ["apollo-11-lm", "apollo-lrv"],
+    "threeSettings": {
+      "color": "#aaaaaa",
+      "roughness": 0.9,
+      "bumpScale": 0.05,
+      "hasAtmosphere": false
+    },
+    "scientificKey": "Preserves the impact bombardment and volcanic magma ocean history of the primordial inner solar system.",
+    "quote": "'That's one small step for man, one giant leap for mankind.'"
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "tagline": "The Rust-Red Planet of Ancient Rivers and Robot Pioneers",
+    "subtitle": "The Graveyard and Cradle of Planetary Science",
+    "description": "The fourth planet from the Sun. A cold desert world that was once warm, wet, and teeming with torrential rivers. NASA's rovers and landers have spent nearly 50 years scouring its rust-colored dunes, studying its thin atmosphere, and seeking ancient biosignatures.",
+    "distance": "54.6 to 401 Million km (Average ~225 Million km)",
+    "travelTime": "6 to 9 months (Hohmann transfer)",
+    "gravity": "3.72 m/s² (38% of Earth)",
+    "temperature": "-140°C to +20°C (Average -63°C)",
+    "atmosphere": "Thin (95% CO₂, surface pressure ~6.5 mb, <1% of Earth)",
+    "color": "#ef4444",
+    "accentColor": "#f97316",
+    "themeClass": "dest-mars",
+    "artifactsCount": 3,
+    "featuredArtifacts": ["viking-1-lander", "sojourner-rover", "mars-pathfinder-lander"],
+    "threeSettings": {
+      "color": "#c85a32",
+      "roughness": 0.8,
+      "bumpScale": 0.08,
+      "hasAtmosphere": true,
+      "atmosphereColor": "#ff7744"
+    },
+    "scientificKey": "Answers whether life can emerge independently on a sister world with early watery conditions.",
+    "quote": "'Mars has been waiting for us for four billion years.'"
+  },
+  {
+    "id": "deep-space",
+    "name": "Deep Space",
+    "tagline": "The Ocean Between Stars Where Humanity's Voice Coast Forever",
+    "subtitle": "The Interstellar Frontier Beyond the Sun's Realm",
+    "description": "Beyond the orbit of Pluto lies the true cosmic wilderness. Here, billions of kilometers from any star, NASA's farthest robotic scouts sail through the interstellar medium—measuring cosmic rays, magnetic currents, and carrying messages to whatever civilizations may watch the stars.",
+    "distance": "24+ Billion km (>163 Astronomical Units)",
+    "travelTime": "45+ years continuous outward voyage",
+    "gravity": "Negligible microgravity (orbital interstellar trajectory)",
+    "temperature": "~3 Kelvin (-270.15°C cosmic background)",
+    "atmosphere": "Interstellar plasma (electrons, ionized hydrogen)",
+    "color": "#818cf8",
+    "accentColor": "#a855f7",
+    "themeClass": "dest-deep-space",
+    "artifactsCount": 1,
+    "featuredArtifacts": ["voyager-1"],
+    "threeSettings": {
+      "color": "#4338ca",
+      "roughness": 0.5,
+      "bumpScale": 0.02,
+      "hasAtmosphere": true,
+      "atmosphereColor": "#818cf8"
+    },
+    "scientificKey": "Direct sampling of galactic cosmic rays and matter born from supernova explosions outside our Sun's protective bubble.",
+    "quote": "'To the makers of music – all worlds, all times.'"
+  }
+]

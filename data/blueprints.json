@@ -1,0 +1,332 @@
+[
+  {
+    "id": "apollo-11-lm-descent",
+    "name": "Apollo 11 Lunar Module Descent Stage",
+    "callsign": "Eagle (LM-5)",
+    "blueprintTitle": "LUNAR MODULE DESCENT STAGE // QUADRANT & PROPULSION ANATOMY",
+    "blueprintType": "Lunar Lander Lower Stage",
+    "schematicSvg": "lunar-module",
+    "components": [
+      {
+        "id": "dps-engine",
+        "name": "Descent Propulsion System (DPS)",
+        "tag": "PROPULSION // THROTTLEABLE",
+        "description": "A pioneering throttleable rocket engine delivering 4,400 N to 43,900 N of thrust using hypergolic propellants (Aerozine-50 and Nitrogen Tetroxide). Enabled Neil Armstrong to manually hover and navigate past boulders in West Crater.",
+        "materials": "Niobium-alloy nozzle extension, titanium propellant tanks",
+        "x": 50,
+        "y": 72
+      },
+      {
+        "id": "landing-gear",
+        "name": "Crushable Honeycomb Landing Struts",
+        "tag": "LANDING GEAR // SHOCK ABSORPTION",
+        "description": "Four cantilevered landing legs with aluminum honeycomb cartridges designed to compress on impact, absorbing landing shock. Footpads were 94 cm in diameter to prevent sinking into lunar dust.",
+        "materials": "Aluminized Mylar thermal wrap, crushable aluminum honeycomb",
+        "x": 18,
+        "y": 82
+      },
+      {
+        "id": "lunar-probe",
+        "name": "Lunar Surface Sensing Probes",
+        "tag": "SENSORS // CONTACT PROBES",
+        "description": "Three 1.7-meter flexible probe wires extending below the footpads. When they touched the lunar regolith, they triggered the blue 'LUNAR CONTACT' light on the control panel, instructing the commander to shut off the engine.",
+        "materials": "Tempered spring steel",
+        "x": 82,
+        "y": 92
+      },
+      {
+        "id": "mesa-bay",
+        "name": "Modular Equipment Stowage Assembly (MESA)",
+        "tag": "PAYLOAD // TV BROADCAST",
+        "description": "Located in Quadrant IV, this hinged pallet dropped down when Armstrong pulled a lanyard on the porch. It housed the Westinghouse black-and-white TV camera that broadcast his first steps to 650 million viewers on Earth.",
+        "materials": "Structural magnesium and thermal blankets",
+        "x": 74,
+        "y": 42
+      },
+      {
+        "id": "thermal-blankets",
+        "name": "Multi-Layer Kapton & Mylar Foil Blankets",
+        "tag": "THERMAL CONTROL // RADIATION SHIELDING",
+        "description": "Up to 25 layers of aluminized Mylar and amber Kapton film. Designed to reflect intense solar radiation (up to +120°C in sunlight) and retain internal heat during lunar shadow (-130°C).",
+        "materials": "Gold Kapton, aluminized Mylar, Inconel foil",
+        "x": 32,
+        "y": 38
+      },
+      {
+        "id": "easep-bay",
+        "name": "EASEP Scientific Experiment Bay",
+        "tag": "SCIENCE EXPERIMENTS // RETROREFLECTOR",
+        "description": "Quadrant II housed the Early Apollo Surface Experiments Package: the Laser Ranging Retroreflector (LRRR) that scientists still ping today and the Passive Seismic Experiment Package (PSEP).",
+        "materials": "Fused silica corner-cube prisms in aluminum housing",
+        "x": 62,
+        "y": 28
+      }
+    ]
+  },
+  {
+    "id": "apollo-lrv",
+    "name": "Apollo Lunar Roving Vehicle",
+    "callsign": "LRV (Moon Buggy)",
+    "blueprintTitle": "LUNAR ROVING VEHICLE // CHASSIS, TRACTION & AVIONICS",
+    "blueprintType": "Electric Surface Exploration Vehicle",
+    "schematicSvg": "lunar-rover",
+    "components": [
+      {
+        "id": "wire-mesh-wheels",
+        "name": "Woven Wire Mesh Tires",
+        "tag": "MOBILITY // TRACTION",
+        "description": "Because rubber tires would burst or freeze in the lunar vacuum, the wheels were crafted from zinc-coated steel piano wire with titanium chevron treads riveted to the exterior for traction in powdery regolith.",
+        "materials": "0.84 mm zinc-coated steel wire, titanium chevrons",
+        "x": 22,
+        "y": 76
+      },
+      {
+        "id": "t-handle-steering",
+        "name": "T-Handle Flight Controller",
+        "tag": "CREW AVIONICS // FLY-BY-WIRE",
+        "description": "Instead of a steering wheel or pedals, the rover was driven with a single T-shaped joystick between the seats. Tilting forward accelerated, pulling back applied mechanical brakes, and tilting left/right commanded 4-wheel steering.",
+        "materials": "Machined aluminum with glove-grip contours",
+        "x": 52,
+        "y": 36
+      },
+      {
+        "id": "high-gain-antenna",
+        "name": "High-Gain Umbrella Dish Antenna",
+        "tag": "COMMUNICATIONS // LIVE S-BAND",
+        "description": "A collapsible 0.9-meter wire-mesh parabolic reflector. Astronauts aimed it directly at Earth using an optical sight to send back real-time color television and biomedical telemetry.",
+        "materials": "Gold-plated molybdenum wire mesh",
+        "x": 38,
+        "y": 22
+      },
+      {
+        "id": "silver-zinc-batteries",
+        "name": "Dual 36-Volt Silver-Zinc Batteries",
+        "tag": "ELECTRICAL POWER // STORAGE",
+        "description": "Two 36-volt non-rechargeable silver-zinc potassium hydroxide batteries located in the forward chassis. They powered four independent 0.25-horsepower traction motors located inside each wheel hub.",
+        "materials": "Silver-zinc alkaline cells (121 Ah capacity)",
+        "x": 78,
+        "y": 58
+      },
+      {
+        "id": "color-tv-camera",
+        "name": "Ground-Controlled Color TV Assembly (GCTA)",
+        "tag": "BROADCAST // REMOTE SURVEILLANCE",
+        "description": "Mounted on the forward deck, this color television camera was operated remotely by Ed Fendell at Mission Control in Houston. It tracked astronaut EVAs and captured the famous Apollo 17 lunar module liftoff.",
+        "materials": "Vidicon tube with motorized zoom, pan, and tilt gimbal",
+        "x": 68,
+        "y": 30
+      }
+    ]
+  },
+  {
+    "id": "viking-1-lander",
+    "name": "Viking 1 Lander",
+    "callsign": "Viking Lander 1",
+    "blueprintTitle": "VIKING 1 LANDER // BIOLOGY SUITE & METEOROLOGY SCHEMATIC",
+    "blueprintType": "Automated Martian Surface Station",
+    "schematicSvg": "viking-lander",
+    "components": [
+      {
+        "id": "gcms-biology",
+        "name": "Automated Biology Experiment Suite (GCMS)",
+        "tag": "ASTROBIOLOGY // MICRO-LAB",
+        "description": "A 0.03 m³ biological mini-laboratory housing three biology experiments (Pyrolytic Release, Labeled Release, Gas Exchange) and a Gas Chromatograph Mass Spectrometer that baked soil samples to test for organic molecules.",
+        "materials": "Titanium ovens, radioactive carbon-14 tracers, krypton valves",
+        "x": 48,
+        "y": 46
+      },
+      {
+        "id": "surface-sampler",
+        "name": "Surface Sampler Collector Arm",
+        "tag": "SAMPLING // 3-METER BOOM",
+        "description": "A motorized 3-meter boom that extended like a steel tape measure. It featured a backhoe collector scoop, temperature sensor, and vibrator sieve to dig trenches and deliver soil into the onboard analytical ovens.",
+        "materials": "Beryllium-copper alloy retractable tube, stainless steel scoop",
+        "x": 84,
+        "y": 62
+      },
+      {
+        "id": "snap-19-rtgs",
+        "name": "Dual SNAP-19 Radioisotope Generators (RTG)",
+        "tag": "NUCLEAR POWER // THERMOELECTRIC",
+        "description": "Two SNAP-19 RTGs encased in beryllium heat shields. Powered by the radioactive decay of Plutonium-238, they supplied 57 watts of continuous electrical power and waste heat to survive frigid Martian nights.",
+        "materials": "Plutonium-238 dioxide capsules, lead-telluride thermocouples",
+        "x": 26,
+        "y": 32
+      },
+      {
+        "id": "meteorology-mast",
+        "name": "Meteorology Sensor Boom",
+        "tag": "ATMOSPHERIC SCIENCE // WEATHER",
+        "description": "Mounted on an upright boom to avoid spacecraft engine heat, it measured Martian atmospheric temperature, wind speed, wind direction, and atmospheric pressure (averaging 7.5 millibars).",
+        "materials": "Hot-film anemometer, platinum resistance thermometers",
+        "x": 66,
+        "y": 18
+      },
+      {
+        "id": "facsimile-cameras",
+        "name": "Dual Facsimile Panoramic Cameras",
+        "tag": "IMAGING // 360-DEGREE SCANNING",
+        "description": "Two nodding-mirror cameras that scanned the landscape line-by-line, capturing the first historic color images of the Martian surface, showing red sky and rusty orange rocks in Chryse Planitia.",
+        "materials": "Silicon photodiode array with motorized mirror drive",
+        "x": 38,
+        "y": 20
+      }
+    ]
+  },
+  {
+    "id": "sojourner-rover",
+    "name": "Sojourner Rover",
+    "callsign": "Microrover Flight Experiment (MFEX)",
+    "blueprintTitle": "SOJOURNER // ROCKER-BOGIE & ALPHA X-RAY ANATOMY",
+    "blueprintType": "Autonomous Robotic Microrover",
+    "schematicSvg": "sojourner-rover",
+    "components": [
+      {
+        "id": "rocker-bogie-mech",
+        "name": "6-Wheel Rocker-Bogie Suspension",
+        "tag": "MOBILITY // OBSTACLE CLIMBING",
+        "description": "A differential rocker-bogie mechanism connecting 6 aluminum wheels without springs. Allowed the 11.5 kg rover to climb over rocks larger than its 13-cm wheels while keeping the main computer body stable.",
+        "materials": "Machined titanium and aluminum chassis tubing",
+        "x": 50,
+        "y": 74
+      },
+      {
+        "id": "apxs-spectrometer",
+        "name": "Alpha Particle X-Ray Spectrometer (APXS)",
+        "tag": "GEOLOGY // ELEMENTAL ANALYSIS",
+        "description": "Mounted on a deployment arm at the rear. Pressed directly against rocks like 'Barnacle Bill' and 'Yogi' to irradiate them with Curium-244, revealing high silica volcanic andesite composition.",
+        "materials": "Curium-244 radioactive source, silicon detector diode",
+        "x": 86,
+        "y": 52
+      },
+      {
+        "id": "solar-deck",
+        "name": "Gallium Arsenide Solar Array Deck",
+        "tag": "POWER // PHOTOVOLTAIC DECK",
+        "description": "A 0.22 m² flat array of high-efficiency gallium arsenide solar cells generating approximately 16 watts of peak power at Martian noon, supplemented by primary non-rechargeable lithium thionyl chloride batteries.",
+        "materials": "Gallium arsenide on germanium substrate",
+        "x": 48,
+        "y": 28
+      },
+      {
+        "id": "laser-stripers",
+        "name": "Laser Hazard Detection Stripers",
+        "tag": "AUTONOMOUS NAVIGATION // DEPTH",
+        "description": "Five diode lasers projected horizontal laser stripes on the ground ahead. The forward stereo CCD cameras measured curvature in the stripes to spot drop-offs and boulders autonomously.",
+        "materials": "Infrared laser diodes (820 nm wavelength)",
+        "x": 16,
+        "y": 42
+      },
+      {
+        "id": "cpu-computer",
+        "name": "80C85 Rad-Hard Microprocessor",
+        "tag": "COMPUTING // EMBEDDED CPU",
+        "description": "An 8-bit radiation-hardened Intel 80C85 processor running at 2 MHz with 512 KB RAM and 176 KB flash ROM. Managed autonomous obstacle avoidance, wheel drive motors, and communication with the Pathfinder lander.",
+        "materials": "Silicon-on-sapphire radiation-hardened integrated circuit",
+        "x": 46,
+        "y": 48
+      }
+    ]
+  },
+  {
+    "id": "mars-pathfinder-lander",
+    "name": "Mars Pathfinder Lander",
+    "callsign": "Carl Sagan Memorial Station",
+    "blueprintTitle": "PATHFINDER LANDER // PETAL DEPLOYMENT & AIRBAG CHASSIS",
+    "blueprintType": "Atmospheric Entry & Surface Base Station",
+    "schematicSvg": "pathfinder-lander",
+    "components": [
+      {
+        "id": "tetrahedral-petals",
+        "name": "Triangular Self-Righting Petals",
+        "tag": "MECHANICAL // DEPLOYMENT",
+        "description": "Three hinged triangular solar petals surrounding a central base. High-torque electric actuators drove the petals downward with enough force to roll the landed spacecraft upright onto its base regardless of how it bounced.",
+        "materials": "Graphite-epoxy composite honeycomb core",
+        "x": 26,
+        "y": 58
+      },
+      {
+        "id": "airbag-assembly",
+        "name": "24-Lobe Kevlar Airbag Cluster",
+        "tag": "DESCENT // IMPACT CUSHION",
+        "description": "Four interconnected sets of six airbags inflated with cool-gas generators 8 seconds before touchdown, allowing the lander to survive a 14 m/s impact and bounce over 15 times across the rocky terrain of Ares Vallis.",
+        "materials": "Multi-layer Vectran / Kevlar fabric with abrasion covers",
+        "x": 78,
+        "y": 78
+      },
+      {
+        "id": "imp-mast-camera",
+        "name": "Imager for Mars Pathfinder (IMP)",
+        "tag": "OPTICAL // STEREO MAST",
+        "description": "Mounted atop a 80-cm pop-up mast, the IMP camera featured stereo optics separated by 14 cm (mimicking human eyes) with 12 optical filters to capture 3D multi-spectral panoramas and monitor atmospheric dust.",
+        "materials": "Charge-coupled device (CCD) array with motorized filter wheel",
+        "x": 52,
+        "y": 18
+      },
+      {
+        "id": "rover-egress-ramps",
+        "name": "Deployable Rover Egress Ramps",
+        "tag": "DEPLOYMENT // ROVER RAMP",
+        "description": "Dual deployable fabric and metal ramps that unfurled over the deflated airbags, giving Sojourner a smooth incline to roll down from the lander deck onto the Martian soil.",
+        "materials": "Vectran fabric with guide rails and tension springs",
+        "x": 42,
+        "y": 72
+      }
+    ]
+  },
+  {
+    "id": "voyager-1",
+    "name": "Voyager 1 Spacecraft",
+    "callsign": "Voyager 1 (VGR-1)",
+    "blueprintTitle": "VOYAGER 1 // INTERSTELLAR ANTENNA, RTG & GOLDEN RECORD",
+    "blueprintType": "Interstellar Deep Space Probe",
+    "schematicSvg": "voyager-probe",
+    "components": [
+      {
+        "id": "high-gain-dish",
+        "name": "3.7-Meter High-Gain Reflector (HGA)",
+        "tag": "TELECOMMUNICATIONS // CASSEGRAIN DISH",
+        "description": "A 3.7-meter parabolic aluminum dish antenna. Focuses ultra-faint 20-watt microwave signals into a narrow 0.5-degree beam directed continuously back at Earth across more than 24 billion kilometers.",
+        "materials": "Graphite-epoxy honeycomb reflector with gold feed horn",
+        "x": 50,
+        "y": 32
+      },
+      {
+        "id": "golden-record-case",
+        "name": "Voyager Golden Record & Cover",
+        "tag": "HUMAN MESSAGE // INTERSTELLAR ARTIFACT",
+        "description": "A 12-inch gold-plated copper phonograph record protected by an electroplated aluminum jacket with an ultra-pure Uranium-238 radioactivity clock. Carries 115 images, greetings in 55 languages, and natural Earth sounds.",
+        "materials": "Gold-plated copper disc, aluminum cover, nickel-plated stylus",
+        "x": 48,
+        "y": 68
+      },
+      {
+        "id": "mhw-rtg-boom",
+        "name": "3 Multihundred-Watt RTGs (Nuclear Power)",
+        "tag": "ELECTRICAL POWER // PLUTONIUM-238",
+        "description": "Three MHW-RTGs mounted on a deployable boom. Converting heat from Plutonium-238 decay into electricity, they originally produced 470 watts of power and still supply ~220 watts after 48+ continuous years in space.",
+        "materials": "Silicon-germanium thermocouples, beryllium radiation shield",
+        "x": 22,
+        "y": 52
+      },
+      {
+        "id": "mag-boom",
+        "name": "13-Meter Magnetometer Boom",
+        "tag": "MAGNETIC FIELDS // FIBERGLASS LATTICE",
+        "description": "A 13-meter deployable triangular fiberglass boom that held high-sensitivity fluxgate magnetometers far away from the spacecraft's electrical wiring. In 2012, it detected the dramatic shift into interstellar magnetic fields.",
+        "materials": "Coiled fiberglass lattice mast with triaxial fluxgate sensors",
+        "x": 82,
+        "y": 28
+      },
+      {
+        "id": "plasma-wave-antennas",
+        "name": "Plasma Wave Subsystem (PWS) Dipole Antennas",
+        "tag": "INTERSTELLAR MEDIUM // DENSITY SENSOR",
+        "description": "Two 10-meter beryllium copper antenna rods forming a V-shape. They recorded electron plasma oscillations, proving in August 2012 that electron density had spiked by a factor of 40—confirming entry into interstellar space.",
+        "materials": "Spring-loaded beryllium copper tubular antennas",
+        "x": 76,
+        "y": 72
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "NASA: Echoes Beyond Earth",
+  "short_name": "EchoesBeyondEarth",
+  "description": "The forgotten machines that changed our understanding of space. Interactive 3D educational aerospace museum.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020409",
+  "theme_color": "#00e5ff",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23050b18' stroke='%2300e5ff' stroke-width='4'/><path d='M50 18 L68 76 L50 64 L32 76 Z' fill='%2300e5ff'/><circle cx='50' cy='42' r='6' fill='%23ffffff'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

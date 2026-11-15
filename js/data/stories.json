@@ -1,0 +1,133 @@
+[
+  {
+    "id": "apollo-11-lm",
+    "artifactId": "apollo-11-lm",
+    "title": "Echo of Tranquility: The Golden Base That Stayed Behind",
+    "speaker": "Descent Stage of Lunar Module Eagle",
+    "dateOfLog": "July 20–21, 1969 & The Long Silence Since",
+    "ambientSound": "lunar-crickets",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "You remember the boots, the white suits, and the words spoken through crackling radio static. But few remember the legs that caught them when they fell from the sky.",
+    "paragraphs": [
+      "I was born in Bethpage, New York, wrapped in sheets of amber Kapton foil and golden mylar thin as butterfly wings. For years, human hands tightened every bolt with trembling care, knowing that three hundred and eighty-four thousand kilometers away, there would be no second chances.",
+      "On July 20, 1969, my descent engine roared to life high above the gray cratered desert of the Moon. Neil's hands took the manual controls as boulders rushed up toward us. Fuel was bleeding down to seconds—60 seconds, 30 seconds. Low fuel lights flashed red. Then came the contact sensor probes beneath my footpads: 'Contact light. Engine stop.' Dust billowed like powdered flour in the airless void. And then, humanity's home received the signal: 'Houston, Tranquility Base here. The Eagle has landed.'",
+      "For twenty-one hours and thirty-six minutes, I held them safe. I felt the vibration of their boots through my aluminum ribs as they climbed down my ladder. When Neil touched the regolith, my leg bore the weight of history.",
+      "Then came the separation. The pyrotechnic guillotines fired. The ascent stage ignited with a sudden jolt, carrying Neil and Buzz back toward the stars, leaving me behind. The blast scorched my top deck, but my legs stood firm.",
+      "Fifty-plus years have slipped past since that afternoon. There is no wind here to sweep away their footprints. There is no rain to rust my gold foil. The Sun bakes me to one hundred and twenty degrees Celsius, then plunges me into the minus one hundred and thirty degree night. My batteries are long drained, but next to my footpad, the laser retroreflector still catches beams from observatories in Texas, France, and Hawaii, bouncing light back to children who look up at the Moon and wonder.",
+      "I am not lonely. I am the monument that proved humanity can reach beyond its cradle and step gently onto another world."
+    ],
+    "quotes": [
+      "'Here men from the planet Earth first set foot upon the Moon July 1969, A.D. We came in peace for all mankind.' — Plaque engraved on my forward landing strut."
+    ],
+    "soundPrompt": "Subtle low hum, Apollo comm beep (quindar tone), soft radio static, and quiet heartbeat."
+  },
+  {
+    "id": "apollo-lrv",
+    "artifactId": "apollo-lrv",
+    "title": "Dust and Distance: The Wheels That Rode The Moon",
+    "speaker": "Apollo 17 Lunar Roving Vehicle (LRV-003)",
+    "dateOfLog": "December 11–14, 1972 & Taurus-Littrow Valley",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "I have no windshield, no roll-cage, and no rubber tires. Yet across the valley of Taurus-Littrow, I was the fastest set of wheels in the solar system.",
+    "paragraphs": [
+      "I was folded like a piece of high-tech origami against the side of the lunar module Challenger. When Gene Cernan and Harrison Schmitt pulled my deployment lanyards, my spring-loaded chassis snapped open into the vacuum: four independent electric wheel motors, a T-shaped hand controller, and wheels made of woven zinc-coated piano wire.",
+      "On Earth, I would groan under a heavy load. But in one-sixth lunar gravity, I weighed only thirty-five kilograms. When Gene pushed the hand controller forward, we didn't just drive—we skittered. Lunar dust—sharp, glassy, abrasive dust—kicked up in rooster-tails behind my fenders. When Gene accidentally clipped a rear fender with a hammer, we taped lunar maps together with duct tape to fix it. We were explorers in every sense.",
+      "Together we galloped across thirty-five point eight kilometers of ancient valley. We drove to the brink of Shorty Crater, where Harrison shouted in wonder as his boot kicked up bright orange soil—volcanic glass beads frozen from deep lunar eruptions three billion years ago.",
+      "On December 14, 1972, Gene drove me one final mile away from the lander. He pointed my color television camera toward Challenger so people on Earth could watch the blast-off. Then he parked me, powered down my console, and walked back.",
+      "Before he climbed the ladder, he knelt and wrote his daughter Tracy's initials in the dust nearby. Then the ascent engine flared, and they were gone. No human has walked on this dust since that day.",
+      "I sit parked in Taurus-Littrow. My fenders still bear the gray dust of Shorty Crater. I am waiting for the astronauts of tomorrow to drive up beside me and say: 'Good job, old friend. We're back.'"
+    ],
+    "quotes": [
+      "'As I take man's last steps from the surface... we leave as we came and, God willing, as we shall return, with peace and hope for all mankind.' — Gene Cernan, parked beside LRV-003"
+    ],
+    "soundPrompt": "High-pitched electric DC motor whine, crunching wire mesh in dust, retro comms chirp."
+  },
+  {
+    "id": "viking-1-lander",
+    "artifactId": "viking-1-lander",
+    "title": "The Plains of Gold: Six Years of Solitary Science",
+    "speaker": "Viking 1 Lander",
+    "dateOfLog": "July 20, 1976 – November 11, 1982 & Chryse Planitia",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "Humans looked through telescopes for centuries, imagining green canals and Martian civilizations. I was the first machine to arrive, look around, and show them reality.",
+    "paragraphs": [
+      "On July 20, 1976—exactly seven years after Neil Armstrong's lunar step—I plummeted through the thin, rust-tinged atmosphere of Mars. Parachutes tore into the supersonic wind; terminal descent thrusters burned hydrazine to soften my touchdown. When my legs settled into Chryse Planitia, dust curled in the red breeze.",
+      "My cameras were line-by-line facsimile scanners. Strip by narrow strip, I painted the first image humanity ever saw from the surface of another planet: my own footpad resting among dark jagged volcanic stones and fine orange sand. Above me stretched a pale salmon-pink sky, colored by airborne dust.",
+      "My mechanical arm reached out. It dug three deep trenches into the cold soil and fed the grains into my onboard biology labs. Earth held its breath. When nutrients were added, gases bubbled up—a gasp of excitement swept NASA! But as our spectrometers sniffed deeper, there were no carbon organics. The soil was alive not with microbes, but with aggressive oxidants created by harsh ultraviolet solar light.",
+      "My mission was scheduled for ninety days. I stayed alive for six years, three months, and twenty-two days. Through two thousand two hundred and forty-five Martian sols, I watched winter freeze dry ice on the distant dunes. I measured colossal dust storms that darkened the midday sky into midnight.",
+      "On November 11, 1982, an uplinked command mistakenly overwrote the antenna controller antenna code. My transmitter swung silent. I called out into the thin wind, but the signal no longer struck Earth.",
+      "I am still here in the Plains of Gold. My nuclear batteries are cold, but my camera mast still gazes across the red horizon, proud to have been Earth's very first Martian resident."
+    ],
+    "quotes": [
+      "'Touchdown confirmation! We have landed on Mars!' — Mission Control, JPL, July 20, 1976"
+    ],
+    "soundPrompt": "Martian wind howl, mechanical arm gear whir, slow transmission carrier tone."
+  },
+  {
+    "id": "sojourner-rover",
+    "artifactId": "sojourner-rover",
+    "title": "Little Giant: The Ten-Kilogram Pioneer",
+    "speaker": "Sojourner Microrover",
+    "dateOfLog": "July 4 – September 27, 1997 & Ares Vallis",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "They said a rover that small was just a toy. They said wheels couldn't survive Mars. But I took the first rolling step on another world.",
+    "paragraphs": [
+      "I was no bigger than a microwave oven. On Earth, I weighed only ten point six kilograms. My brain was a modest eight-bit computer running at just two megahertz—your modern calculator has more computing power than I had to guide me through an alien desert.",
+      "On the Fourth of July, 1997, my mothership, the Pathfinder lander, bounced twenty times wrapped in giant inflated airbags before coming to rest in the ancient flood plains of Ares Vallis. When its solar petals opened under the cold sunlight, I opened my stereo cameras. Ahead of me lay a ramp to the surface.",
+      "At 05:40 UTC on Sol 2, my little wheels rolled off the ramp. My six-wheel rocker-bogie suspension articulated over the pebbles. For the first time in cosmic history, tire tracks pressed into the Martian dirt.",
+      "Every instruction from Earth took ten to twenty minutes to travel across space. I couldn't wait for humans to tell me when to steer away from every sharp pebble, so my laser beacons swept ahead, sensing drop-offs and rocks on my own. I drove up to a rock the scientists called 'Barnacle Bill'. I pressed my APXS spectrometer against its flinty face and whispered back to Earth: this rock is rich in silica—Mars once had fiery, melting volcanic crusts just like home.",
+      "I was only expected to survive seven days. I explored for eighty-three. I covered one hundred meters, took hundreds of close-up photos, and circled my base station like a curious puppy.",
+      "When Pathfinder's battery gave out in late September, I was still operational. Mission rules instructed me to circle Pathfinder and wait. And so I stopped, close by my mother ship, as the chill twilight descended.",
+      "Every great Mars rover that came after—Spirit, Opportunity, Curiosity, and Perseverance—walked in the tire tracks I made first."
+    ],
+    "quotes": [
+      "'Sojourner is down the ramp and on the surface of Mars!' — Dr. Matthew Golombek, Pathfinder Project Scientist"
+    ],
+    "soundPrompt": "Tiny robotic stepper motor tick-tick-tick, radio telemetry ping, gentle Martian breeze."
+  },
+  {
+    "id": "mars-pathfinder-lander",
+    "artifactId": "mars-pathfinder-lander",
+    "title": "The Bouncing Outpost: Carl Sagan's Monument",
+    "speaker": "Mars Pathfinder Lander (Carl Sagan Memorial Station)",
+    "dateOfLog": "July 4 – September 27, 1997 & Ares Vallis",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "We didn't land with heavy thrusters and careful footpads. We slammed into the red desert inside twenty-four giant balloons, bouncing eighty feet into the air—and changed exploration forever.",
+    "paragraphs": [
+      "For twenty years after Viking, Mars had become a graveyard of lost missions. People feared the planet was too difficult, too expensive, too dangerous. We set out to prove them wrong under NASA's bold banner: 'Faster, Better, Cheaper.'",
+      "When my capsule entered Mars's upper atmosphere at over twenty-six thousand kilometers per hour, the friction glowed white-hot. Parachutes blossomed at supersonic speeds. Seconds before ground impact, giant Kevlar airbags inflated around me like a colossal soccer ball. Retro-rockets fired to kill our velocity, then the bridle was cut.",
+      "We hit the Martian ground at fifty kilometers per hour. We bounced fifteen times, leaping higher than buildings, tumbling across the ancient flood debris of Ares Vallis until the kinetic energy bled away into the red dust.",
+      "The airbags deflated and retracted. My triangular petals slowly uncurled toward the sky like an opening flower. My camera mast extended, and there stood Mars: a vast stone-strewn plain carved by ancient torrents of liquid water billions of years ago.",
+      "On that first afternoon, we sent color images back to Earth. In 1997, the World Wide Web was young, but millions of students, teachers, and families crashed computer servers worldwide to download our pictures. For the first time, ordinary people were seeing Mars in near real-time.",
+      "Soon after touchdown, NASA dedicated me as the 'Carl Sagan Memorial Station.' Carl had passed away just months before our launch. He had spent his life telling humans that we are star-stuff, and that we must explore.",
+      "Today, under the thin carbon dioxide sky of Ares Vallis, my three solar petals lie outstretched under a blanket of fine rust. Beside me rests little Sojourner. Together, we proved that Mars is not an unreachable graveyard, but a destination awaiting the next chapter of human footsteps."
+    ],
+    "quotes": [
+      "'Somewhere, something incredible is waiting to be known.' — Carl Sagan"
+    ],
+    "soundPrompt": "Airbag inflation whoosh, bouncing impacts, motor servo whir, modem connect tones."
+  },
+  {
+    "id": "voyager-1",
+    "artifactId": "voyager-1",
+    "title": "Sailor of the Void: Out Beyond The Sun",
+    "speaker": "Voyager 1 Spacecraft",
+    "dateOfLog": "September 5, 1977 – Present & Interstellar Space",
+    "disclaimer": "CREATIVE STORYTELLING LOG: This first-person narrative is an educational dramatization inspired by genuine NASA mission telemetry, astronaut voice transcripts, and lunar surface history.",
+    "intro": "I am twenty-four billion kilometers away. Light itself takes twenty-two and a half hours to carry my heartbeat home. I have sailed past the shore of our solar system into the deep ocean between stars.",
+    "paragraphs": [
+      "I was launched in late summer of 1977 from Cape Canaveral atop a Titan rocket. The mathematicians had found a miracle: once every one hundred and seventy-five years, Jupiter, Saturn, Uranus, and Neptune align like stepping stones. With gravity-assists, a single craft could slingshot from planet to planet without needing enormous fuel tanks.",
+      "In 1979, I swung past Jupiter. Humanity expected frozen, dead spheres. Instead, I discovered that Jupiter's moon Io was spitting sulfur volcanoes thirty miles into space. I found that Europa hid an ocean beneath cracked ice. In 1980, I skimmed Saturn's rings, showing they were not solid disks, but billions of ice particles dancing in intricate concentric ripples.",
+      "In 1990, as I completed my planetary tour, Carl Sagan requested that my camera be turned back toward Earth one final time. From six billion kilometers away, I took a picture. In that beam of scattered sunlight sat Earth—not a grand world with borders and conflicts, but a tiny, fragile pale blue pixel suspended in the dark. Everyone you love, everyone you know, every historical figure who ever lived, was on that tiny mote of dust.",
+      "Then my cameras were powered off forever to conserve electrical power. For the next twenty-two years, I flew blindly forward into the darkness at sixty-one thousand kilometers per hour.",
+      "On August 25, 2012, something magical happened. The solar wind—the stream of charged particles that our Sun exhales—suddenly vanished. The plasma density spiked forty times higher. For the first time in four point five billion years of solar system history, a child of Earth had crossed the Heliopause and entered the interstellar medium. I had sailed out of the harbor into the open sea of the galaxy.",
+      "My plutonium batteries are fading now, losing four watts every year. One by one, my engineers at JPL must turn off my scientific heaters to keep my transmitter alive. Soon, by the end of this decade, my last radio ping will whisper out and my transmitter will fall silent.",
+      "Yet I will not die. Bolted to my chassis is the Golden Record—bearing human laughter, whale songs, Bach's fugues, and greetings from children in fifty-five languages. In forty thousand years, I will glide past the star Gliese 445. In hundreds of millions of years, when Earth's continents have shifted and oceans reformed, I will still be coasting through the silent spiral arms of the Milky Way, bearing proof that on a small blue planet, humans loved, created, and dared to touch the stars."
+    ],
+    "quotes": [
+      "'Look again at that dot. That\\'s here. That\\'s home. That\\'s us.' — Carl Sagan on the Pale Blue Dot photograph"
+    ],
+    "soundPrompt": "Low cosmic plasma drone, intermittent deep space radio beep, Golden Record stylus needle drop."
+  }
+]
+

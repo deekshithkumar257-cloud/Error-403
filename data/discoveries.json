@@ -1,0 +1,87 @@
+[
+  {
+    "id": "lunar-laser-ranging",
+    "title": "Laser Ranging: How Apollo 11 Measures the Moon's Drift",
+    "topic": "Orbital Mechanics & Geodesy",
+    "destination": "The Moon",
+    "artifactId": "apollo-11-lm",
+    "badge": "Physics & Astronomy",
+    "summary": "Did you know the Moon is slowly moving away from Earth at 3.8 centimeters (1.5 inches) every year—about the same speed your fingernails grow? We know this because of an experiment left on the Moon in 1969.",
+    "howItWorks": "Astronaut Buzz Aldrin placed the Laser Ranging Retroreflector (LRRR) in the lunar dust. It has 100 special quartz corner-cube prisms that act like bicycle reflectors: any laser beam fired from an observatory on Earth is bounced straight back to where it came from. By timing the round trip of light (around 2.5 seconds) down to fractions of a nanosecond, scientists calculate the Earth-Moon distance with millimeter precision.",
+    "studentTakeaway": "Because Earth's oceans bulge from tidal gravity, Earth's spin pulls the tidal bulge slightly ahead of the Moon. This tidal friction acts like a gravitational slingshot, transferring Earth's rotational energy into the Moon's orbit, pushing the Moon slowly outward into a higher orbit!",
+    "funFact": "The retroreflector is completely passive—it requires zero electricity, batteries, or moving parts. It has worked without interruption for over half a century!"
+  },
+  {
+    "id": "genesis-rock",
+    "title": "The Genesis Rock: Unlocking 4.1 Billion Years of Lunar Fire",
+    "topic": "Planetary Geology",
+    "destination": "The Moon",
+    "artifactId": "apollo-lrv",
+    "badge": "Geology & Magma Oceans",
+    "summary": "When Apollo 15 astronauts used their Lunar Roving Vehicle to reach Spur Crater, they spotted a gleaming white rock sitting atop a dark mound. It was nicknamed the 'Genesis Rock'.",
+    "howItWorks": "The rock is composed of anorthosite, a mineral made almost entirely of plagioclase feldspar. Geologists had hypothesized that early in the Moon's life, the entire outer mantle was a molten ocean of incandescent magma. Dense minerals like olivine sank toward the core, while lighter plagioclase crystals floated to the top like ice cubes in soda, freezing into the Moon's original pale crust.",
+    "studentTakeaway": "The Genesis Rock was radiometrically dated to 4.1 billion years old—older than almost any rock found on Earth! Because Earth's tectonic plates and rain recycle crust, early Earth rocks are destroyed. The airless Moon preserves the primordial blueprint of planetary formation.",
+    "funFact": "Astronaut Dave Scott radioed to Mission Control upon finding it: 'Guess what we just found! I think we found what we came for!'"
+  },
+  {
+    "id": "viking-biology-puzzle",
+    "title": "The Soil Chemistry Puzzle: Did Viking Find Life on Mars?",
+    "topic": "Astrobiology & Soil Chemistry",
+    "destination": "Mars",
+    "artifactId": "viking-1-lander",
+    "badge": "Astrobiology",
+    "summary": "In 1976, Viking 1 scooped Martian dust into miniature automated biology test-tubes. The instruments detected a sudden burst of radioactive carbon dioxide gas—the textbook signature of microbial respiration. Yet, there was a twist.",
+    "howItWorks": "While the Labeled Release experiment gave a positive gas reading, the sensitive Gas Chromatograph-Mass Spectrometer (GCMS) detected no organic carbon compounds in the soil—fewer organic molecules than even the cleanest lunar samples.",
+    "studentTakeaway": "Decades of research revealed that intense solar ultraviolet radiation bathing the dry, unshielded Martian surface creates aggressive, non-biological chemical oxidants, specifically perchlorates and hydrogen peroxide. When damp nutrient broth touched the soil, these oxidants tore the nutrients apart, releasing gas without any living bacteria involved.",
+    "funFact": "Viking taught scientists an invaluable lesson: before searching for alien life, you must first understand the exotic inorganic chemistry of an alien planet!"
+  },
+  {
+    "id": "mars-flood-channels",
+    "title": "Catastrophic Flash Floods: Ares Vallis & The Watery Past",
+    "topic": "Hydrogeology & Martian Climate",
+    "destination": "Mars",
+    "artifactId": "mars-pathfinder-lander",
+    "badge": "Planetary Hydrology",
+    "summary": "Today Mars is an arid, bone-dry frozen desert. Yet when Mars Pathfinder and Sojourner rolled onto Ares Vallis, they found boulders aligned like pebbles in an ancient roaring river bed.",
+    "howItWorks": "Geologists noticed 'imbricated boulders'—flat rocks tilted systematically in the same direction, exactly like rocks in river rapids on Earth. Ares Vallis is an enormous outflow channel where catastrophic subterranean water aquifers ruptured billions of years ago.",
+    "studentTakeaway": "Calculations showed that the flood which carved Ares Vallis was one of the largest floods in the solar system—discharging water hundreds of times greater than the Amazon River, draining an ancient inland lake in a matter of weeks and depositing a giant debris fan.",
+    "funFact": "Sojourner analyzed the smooth, rounded pebbles near the lander. Water erosion is one of the only natural mechanisms capable of rounding jagged volcanic rocks into smooth river stones."
+  },
+  {
+    "id": "rocker-bogie-suspension",
+    "title": "The Rocker-Bogie: How Space Wheels Climb Any Boulder",
+    "topic": "Robotics & Mechanical Engineering",
+    "destination": "Mars",
+    "artifactId": "sojourner-rover",
+    "badge": "Robotics Engineering",
+    "summary": "Regular cars use springs and shock absorbers. But if a rover in space broke a metal spring, it would be stranded forever. So NASA engineers invented the 'Rocker-Bogie' mechanism.",
+    "howItWorks": "The suspension consists of two rockers connected by a central differential pivot without any springs. Each rocker has a wheel in front and a smaller rocker (bogie) in the back holding two wheels. When one front wheel rolls over a tall rock, the differential tilts the opposite side downward, keeping all six wheels firmly pressed against the uneven ground.",
+    "studentTakeaway": "Because weight is evenly distributed at all times, the rover can climb over rocks taller than the diameter of its own wheels without tilting more than a few degrees or tipping over.",
+    "funFact": "First validated on Mars by Sojourner in 1997, the rocker-bogie design worked so masterfully that NASA used it on Spirit, Opportunity, Curiosity, and Perseverance!"
+  },
+  {
+    "id": "heliopause-crossing",
+    "title": "Crossing the Heliopause: Sailing Beyond the Sun's Bubble",
+    "topic": "Astrophysics & Solar Physics",
+    "destination": "Deep Space",
+    "artifactId": "voyager-1",
+    "badge": "Interstellar Physics",
+    "summary": "Our Sun does not simply emit sunlight; it blows a constant supersonic wind of ionized hydrogen and helium plasma outward at hundreds of kilometers per second. This creates a giant protective cocoon called the Heliosphere.",
+    "howItWorks": "On August 25, 2012, at a distance of 121 AU (18 billion kilometers), Voyager 1's instruments detected a dramatic event: the count of low-energy solar protons plummeted to near zero, while the flux of high-energy galactic cosmic rays from outside our solar system shot upward. Shortly after, plasma wave vibrations revealed cold, dense interstellar gas.",
+    "studentTakeaway": "Voyager 1 had crossed the Heliopause—the invisible frontier where the outward pressure of the solar wind balances against the inward pressure of the interstellar medium. It proved that our solar system is shielded by a magnetic bubble, protecting planets from lethal cosmic rays.",
+    "funFact": "Voyager 1 is traveling so fast (17 km per second) that it covers roughly 1.5 million kilometers every single day!"
+  },
+  {
+    "id": "golden-record-physics",
+    "title": "The Golden Record: Humanity's Cosmic Phonograph",
+    "topic": "Communications & Astrobiology",
+    "destination": "Deep Space",
+    "artifactId": "voyager-1",
+    "badge": "Message to the Stars",
+    "summary": "How do you communicate with an alien civilization that has never heard human words, doesn't know English or Spanish, and has never seen our Sun?",
+    "howItWorks": "Carl Sagan and Ann Druyan created the Voyager Golden Record. Its cover is etched with universal scientific symbols: the hyperfine transition of a neutral hydrogen atom defines fundamental units of time (0.7 nanoseconds) and length (21 cm). A pulsar map uses 14 spinning pulsars with binary frequencies to pinpoint Earth's exact cosmic coordinates.",
+    "studentTakeaway": "The record contains analog grooves holding 116 images encoded in audio scan lines, greetings in 55 languages, natural Earth sounds (thunder, wind, birds, chimpanzees), and 90 minutes of music from around our world. The gold plating ensures it will remain readable for over one billion years.",
+    "funFact": "The record also includes the recorded brainwaves of Ann Druyan while meditating on the history of Earth, human civilization, and what it feels like to fall in love."
+  }
+]
+

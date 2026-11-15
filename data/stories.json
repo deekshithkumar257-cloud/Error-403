@@ -1,0 +1,392 @@
+[
+  {
+    "id": "apollo-11-lm-descent",
+    "artifactId": "apollo-11-lm-descent",
+    "aliases": ["apollo-11", "eagle", "apollo-11-lm"],
+    "artifactName": "Apollo 11 Lunar Module Descent Stage",
+    "speaker": "Lunar Module Eagle — Descent Stage",
+    "destination": "The Moon",
+    "destinationIcon": "🌕",
+    "mission": "Apollo 11",
+    "year": "1969",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones, landing coordinates, and scientific data reflect official NASA historical archives.",
+    "nasaSourceUrl": "https://www.nasa.gov/mission/apollo-11/",
+    "nasaSourceLabel": "NASA Apollo 11 Mission Overview & Lunar Surface Journal",
+    "heroImage": "https://images-assets.nasa.gov/image/as11-40-5927/as11-40-5927~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "A Golden Spider Under Black Skies",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5927/as11-40-5927~orig.jpg",
+        "caption": "The Apollo 11 Lunar Module Descent Stage resting permanently at Tranquility Base.",
+        "text": "I was never meant to return to Earth. My angular body was shaped not by wind or waves, but by mathematics and vacuum. Wrapped in 25 delicate layers of gold Kapton and aluminized Mylar foil, I stood with four spindly legs like a geometric golden spider resting beneath a jet-black sky."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "The Reason I Was Sent",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5874/as11-40-5874~orig.jpg",
+        "caption": "Apollo 11 Lunar Module Eagle photographed from Columbia in lunar orbit.",
+        "text": "NASA gave me a momentous mission: carry Neil Armstrong and Buzz Aldrin from lunar orbit down to the cratered surface of the Moon. Every gram of my structure was pared away to save weight. My throttleable rocket engine had to fire smoothly while my legs cushioned our touchdown on an untamed alien world."
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Contact Light: The Descent",
+        "badge": "The Touchdown",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5886/as11-40-5886~orig.jpg",
+        "caption": "Buzz Aldrin descending Eagle's ladder to step onto the lunar surface.",
+        "text": "On July 20, 1969, my Descent Propulsion System engine ignited. As we neared the ground, Neil Armstrong saw giant boulders in our landing path and took manual control, skimming over West Crater. With only seconds of fuel remaining, my 1.7-meter wire probes touched the soil. The blue cockpit light glowed: 'CONTACT LIGHT.' Neil called Earth: 'Houston, Tranquility Base here. The Eagle has landed.'"
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Mirrors and Moonquakes",
+        "badge": "Scientific Legacy",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5952/as11-40-5952~orig.jpg",
+        "caption": "The Laser Ranging Retroreflector (LRRR) deployed on the lunar surface.",
+        "text": "My payload bay held the first lunar science station: a seismometer that recorded subtle moonquakes and the Laser Ranging Retroreflector (LRRR). That optical array of 100 quartz corner-cube prisms required zero electrical power. By aiming high-power lasers from Earth at my reflector, scientists proved that the Moon is spiraling away from Earth by 3.8 cm every year!"
+      },
+      {
+        "chapterNumber": 5,
+        "title": "Tranquility Base: My Eternal Home",
+        "badge": "Current Location",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5878/as11-40-5878~orig.jpg",
+        "caption": "Human bootprint preserved in the lunar regolith at Tranquility Base.",
+        "text": "On July 21, 1969, after 21 hours on the surface, my crew climbed into the upper ascent cockpit. My ascent stage ignited, rocketing them back into orbit, while I remained behind as their launch pad. I am still here at Mare Tranquillitatis (0.67408° N, 23.47297° E). With no atmosphere, rain, or wind, Neil and Buzz's footprints beside my legs remain sharply preserved in the regolith."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "A Message to the Future",
+        "badge": "Closing Words",
+        "image": "https://images-assets.nasa.gov/image/as11-40-5927/as11-40-5927~orig.jpg",
+        "caption": "The historic plaque on Eagle's front landing leg: 'We came in peace for all mankind.'",
+        "text": "On my forward landing leg is a stainless-steel plaque bearing drawings of the Earth and the words: 'Here men from the planet Earth first set foot upon the Moon. July 1969, A.D. We came in peace for all mankind.' As you look up at the silver crescent in your evening sky, remember: the machines that carried humanity's greatest dreams still keep silent watch."
+      }
+    ]
+  },
+  {
+    "id": "apollo-lrv",
+    "artifactId": "apollo-lrv",
+    "aliases": ["lrv", "moon-buggy", "apollo-rover"],
+    "artifactName": "Apollo Lunar Roving Vehicle",
+    "speaker": "Lunar Roving Vehicle (LRV-003 'Moon Buggy')",
+    "destination": "The Moon",
+    "destinationIcon": "🌕",
+    "mission": "Apollo 15, 16, & 17",
+    "year": "1971–1972",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones and scientific data reflect official NASA historical archives.",
+    "nasaSourceUrl": "https://www.nasa.gov/history/alsj/lrvhand.html",
+    "nasaSourceLabel": "NASA Apollo Lunar Surface Journal: LRV Operations Handbook",
+    "heroImage": "https://images-assets.nasa.gov/image/as17-147-22527/as17-147-22527~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Wheels for an Alien World",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/as17-147-22527/as17-147-22527~orig.jpg",
+        "caption": "Apollo 17 Commander Gene Cernan with LRV-3 at Taurus-Littrow.",
+        "text": "Rubber tires would have burst in the harsh vacuum of the Moon, so NASA engineers built my wheels from woven piano wire made of zinc-coated steel, riveted with titanium chevron treads. I was an open-frame electric dune buggy, designed to unfold from a tight compartment on the side of the Lunar Module."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Expanding Human Footsteps",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/as15-88-11866/as15-88-11866~orig.jpg",
+        "caption": "Apollo 15 LRV-1 parked near the dramatic canyon of Hadley Rille.",
+        "text": "During early Apollo missions, astronauts could walk only a few hundred meters from their lander. Apollo 11 did not carry a rover. But NASA wanted to explore deep craters and towering mountain ranges, so they built three rovers for the extended J-missions: Apollo 15, 16, and 17. Exactly three rovers were driven on the Moon, and all three stay here forever."
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Driving Across Craters at 8 MPH",
+        "badge": "The Traverse",
+        "image": "https://images-assets.nasa.gov/image/as16-107-17528/as16-107-17528~orig.jpg",
+        "caption": "Astronaut John Young driving LRV-2 across Descartes Highlands.",
+        "text": "I didn't have a steering wheel or foot pedals. The astronaut in the left seat drove me with a small T-shaped joystick between our lawn-chair seats. Tilting it forward engaged four independent 0.25-horsepower electric motors inside my wheel hubs. I kicked up rooster-tails of silver lunar dust, cruising at 13 km/h (8 mph) over rolling terrain."
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Uncovering the Genesis Rock",
+        "badge": "Discoveries",
+        "image": "https://images-assets.nasa.gov/image/as15-88-11901/as15-88-11901~orig.jpg",
+        "caption": "The famous 4.1-billion-year-old Genesis Rock discovered at Hadley Rille.",
+        "text": "By driving astronauts kilometers away from base, my sisters and I enabled historic discoveries. On Apollo 15, LRV-1 carried Dave Scott and Jim Irwin to Hadley Rille, where they spotted sample 15415: the sparkling white 'Genesis Rock', dated to 4.1 billion years old! It proved that the early Moon was once coated in a global magma ocean. On Apollo 17, I helped find orange volcanic glass beads."
+      },
+      {
+        "chapterNumber": 5,
+        "title": "The VIP Parking Spot",
+        "badge": "Current Location",
+        "image": "https://images-assets.nasa.gov/image/as17-147-22527/as17-147-22527~orig.jpg",
+        "caption": "LRV-3 parked at the final VIP location at Taurus-Littrow.",
+        "text": "At the end of each mission, astronauts parked us at the 'VIP site' about 100 meters away. From there, my color television camera was steered by Mission Control in Houston to film the astronauts blasting off for Earth. Today, LRV-1 rests at Hadley Rille, LRV-2 at Descartes Highlands, and I (LRV-3) rest at Taurus-Littrow (20.19° N, 30.77° E)."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "Tracks in the Dust",
+        "badge": "Closing Message",
+        "image": "https://images-assets.nasa.gov/image/as17-147-22527/as17-147-22527~orig.jpg",
+        "caption": "Rover wheel tracks curving through the pristine lunar regolith.",
+        "text": "Across our three expeditions, we drove 90.3 kilometers (56 miles) through the gray silence. With no rain or wind to sweep the valleys, our wire-mesh tread patterns are still crisply stamped into the lunar dust, awaiting the next generation of explorers who will return with the Artemis program."
+      }
+    ]
+  },
+  {
+    "id": "viking-1-lander",
+    "artifactId": "viking-1-lander",
+    "aliases": ["viking-1", "viking-lander", "vl-1"],
+    "artifactName": "Viking 1 Lander",
+    "speaker": "Viking 1 Lander",
+    "destination": "Mars",
+    "destinationIcon": "🔴",
+    "mission": "Viking 1",
+    "year": "1975–1976",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones, landing coordinates, and scientific data reflect official NASA historical archives.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/viking-1",
+    "nasaSourceLabel": "NASA JPL Viking 1 Mission & NSSDCA ID: 1975-075C",
+    "heroImage": "https://images-assets.nasa.gov/image/PIA00563/PIA00563~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Touchdown on the Red Planet",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/PIA00563/PIA00563~orig.jpg",
+        "caption": "First color image of the Martian surface taken by Viking 1 in July 1976.",
+        "text": "On July 20, 1976—exactly seven years after Neil Armstrong set foot on the Moon—I pierced the thin carbon dioxide atmosphere of Mars. Parachutes slowed my supersonic descent, and terminal rocket thrusters guided me to a soft landing on Chryse Planitia, the 'Plains of Gold'. I became the first successful long-duration American lander on Mars."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "The Search for Martian Life",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/PIA00564/PIA00564~orig.jpg",
+        "caption": "Viking 1's mechanical sampler arm extending to scoop Martian soil.",
+        "text": "NASA sent me to answer one of humanity's oldest questions: Is there life on Mars? My body housed a state-of-the-art miniature automated biological laboratory. Powered by the warm radioactive decay of two Plutonium-238 generators (SNAP-19 RTGs), I stood ready to sample soil that had never known human touch."
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Red Dust and Pink Skies",
+        "badge": "First Images",
+        "image": "https://images-assets.nasa.gov/image/PIA00563/PIA00563~orig.jpg",
+        "caption": "Viking 1's footpad resting on the rusty, fine-grained regolith of Chryse Planitia.",
+        "text": "Within minutes of landing, my scanning facsimile mirror cameras whirred to life. Line by line, I built up the first color panoramas ever seen from the surface of Mars. Humanity had expected dark blue skies; instead, my sensors revealed a pale salmon-pink sky, tinted by airborne ferric oxide dust swept up from a vast rust-colored desert."
+      },
+      {
+        "chapterNumber": 4,
+        "title": "The Chemical Mystery of Martian Soil",
+        "badge": "Discoveries",
+        "image": "https://images-assets.nasa.gov/image/PIA00564/PIA00564~orig.jpg",
+        "caption": "Trenches dug in the Martian surface by Viking 1's robotic scoop arm.",
+        "text": "My 3-meter mechanical boom reached down, dug trenches, and brought Martian soil into automated biology miniature test chambers. When nutrients touched the soil, gases surged! But my mass spectrometer detected zero organic carbon molecules. NASA scientists determined that the reactions were not living organisms, but non-biological chemical oxidants—perchlorates and superoxides produced by solar ultraviolet light."
+      },
+      {
+        "chapterNumber": 5,
+        "title": "Six Years in the Plains of Gold",
+        "badge": "Current Location",
+        "image": "https://images-assets.nasa.gov/image/PIA00563/PIA00563~orig.jpg",
+        "caption": "Viking 1 Lander resting at Chryse Planitia (22.48° N, 47.97° W).",
+        "text": "I operated for 2,245 Martian sols—over six Earth years! Every day, my weather mast measured winds, temperatures down to -120°C, and pressure cycles averaging 7.5 millibars. In November 1982, a ground software update accidentally overwrote my antenna tracking angle, and my transmissions ceased. I rest permanently at Chryse Planitia (22.48° N, 47.97° W)."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "A Beacon for Future Rovers",
+        "badge": "Closing Message",
+        "image": "https://images-assets.nasa.gov/image/PIA00563/PIA00563~orig.jpg",
+        "caption": "The quiet plains of Chryse Planitia under the Martian twilight.",
+        "text": "NASA renamed me the 'Thomas A. Mutch Memorial Station'. I proved that human machines could endure the brutal freeze and dust storms of Mars for years. Every rover that followed—from tiny Sojourner to giant Perseverance—traveled down the path I first opened across the Plains of Gold."
+      }
+    ]
+  },
+  {
+    "id": "sojourner-rover",
+    "artifactId": "sojourner-rover",
+    "aliases": ["sojourner", "mfex", "pathfinder-rover"],
+    "artifactName": "Sojourner Rover",
+    "speaker": "Sojourner Microrover",
+    "destination": "Mars",
+    "destinationIcon": "🔴",
+    "mission": "Mars Pathfinder",
+    "year": "1996–1997",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones, operating durations, and scientific data reflect official NASA historical archives.",
+    "nasaSourceUrl": "https://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner",
+    "nasaSourceLabel": "NASA JPL Mars Pathfinder & Sojourner Archive (NSSDCA ID: 1996-068B)",
+    "heroImage": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "The Microwave-Sized Pioneer",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "Sojourner rover examining the Martian rock 'Yogi' with its APXS instrument.",
+        "text": "I was small enough to fit inside a microwave oven, measuring just 65 centimeters long and weighing 11.5 kilograms (25 pounds). But on Mars, where gravity is only 38 percent of Earth's, I weighed less than 10 pounds! Named after abolitionist Sojourner Truth, I carried humanity's hopes to become the first mobile rover on Mars."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "A 7-Sol Test That Made History",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "Sojourner stowed on the petal of the Mars Pathfinder lander before deployment.",
+        "text": "Many thought a wheeled robot would instantly become high-centered on Martian rocks. NASA sent me as a technology demonstration, packed neatly onto the petal of the Mars Pathfinder lander. My primary mission was planned for just seven Martian sols (design goal: 30 sols). Could an autonomous wheeled vehicle survive the alien terrain?"
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Rocker-Bogie Rolls Down the Ramp",
+        "badge": "The Rollout",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "Sojourner rolling off the Pathfinder lander ramp onto the Martian soil.",
+        "text": "On July 4, 1997, my mothership bounced across Ares Vallis inside giant Kevlar airbags. Once the lander's triangular petals unfurled, I saw the Martian sky. On Sol 2, my six cleated aluminum wheels rolled down the ramps. My patented 'Rocker-Bogie' suspension moved over bumps—each wheel climbing obstacles bigger than itself while keeping my electronics deck level."
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Sniffing Rocks: Barnacle Bill and Yogi",
+        "badge": "Discoveries",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "Martian rock 'Barnacle Bill' analyzed by Sojourner's alpha particle spectrometer.",
+        "text": "I used five laser diodes to project stripes on the ground ahead, spotting obstacles autonomously with my 8-bit Intel 80C85 processor. I backed up to boulders nicknamed 'Barnacle Bill' and 'Yogi', deploying my Alpha Particle X-Ray Spectrometer (APXS). I irradiated the rocks with Curium-244, revealing high silica volcanic andesite that proved ancient Mars had complex molten crustal cycles."
+      },
+      {
+        "chapterNumber": 5,
+        "title": "83 Sols of Wonder",
+        "badge": "Current Location",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "Sojourner resting in Ares Vallis, near the Carl Sagan Memorial Station.",
+        "text": "My 7-sol planned mission stretched into 83 Martian sols—nearly twelve times longer than planned! I traveled 104 meters around the lander, beaming back 550 images. On September 27, 1997, our lander's battery finally succumbed to the freezing cold. I remain parked peacefully in Ares Vallis (19.33° N, 33.55° W), just a few strides from the lander."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "A Legacy on Wheels",
+        "badge": "Closing Message",
+        "image": "https://images-assets.nasa.gov/image/PIA01122/PIA01122~orig.jpg",
+        "caption": "The tiny tracks of Sojourner leading into the vast Martian desert.",
+        "text": "I proved that wheels could explore another world. The Rocker-Bogie suspension geometry I validated became the chassis architecture for Spirit, Opportunity, Curiosity, and Perseverance. I was small, but my tracks opened the roads of Mars."
+      }
+    ]
+  },
+  {
+    "id": "mars-pathfinder-lander",
+    "artifactId": "mars-pathfinder-lander",
+    "aliases": ["pathfinder", "carl-sagan-station", "pathfinder-lander"],
+    "artifactName": "Mars Pathfinder Lander",
+    "speaker": "Mars Pathfinder (Carl Sagan Memorial Station)",
+    "destination": "Mars",
+    "destinationIcon": "🔴",
+    "mission": "Mars Pathfinder",
+    "year": "1996–1997",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones, landing coordinates, and scientific data reflect official NASA historical archives.",
+    "nasaSourceUrl": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "nasaSourceLabel": "NASA Science Mars Pathfinder & NSSDCA ID: 1996-068A",
+    "heroImage": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "A Pyramid on the Floodplains",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "Mars Pathfinder's triangular petals open on the rocky surface of Ares Vallis.",
+        "text": "I was shaped like a three-sided pyramid, a folded tetrahedral puzzle protected by a heat shield. Inside my core sat the tiny Sojourner rover. We plummeted directly into the Martian atmosphere at 17,000 miles per hour, heading for the ancient catastrophic flood plains of Ares Vallis."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Bouncing to Touchdown on Airbags",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "Deflated Kevlar airbags surrounding Pathfinder's unfolded base.",
+        "text": "Landing on Mars is dangerous; heavy retrorocket landers are expensive. NASA used me to demonstrate a bold, low-cost concept: impact airbags. Eight seconds before touchdown on July 4, 1997, 24 giant Kevlar/Vectran airbags inflated around me. I struck the surface, bouncing over 15 times and soaring 15 meters into the air before rolling to a stop on the red plains."
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Unfurling Petals in Ares Vallis",
+        "badge": "The Unfolding",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "Panoramic view of Ares Vallis taken by Pathfinder's stereo mast camera.",
+        "text": "Once motionless, my airbags deflated. Powerful electric motors drove my three triangular petals open like a blooming flower, rolling me upright onto my base. My 80-centimeter stereoscopic camera mast popped up like a periscope, beholding a field of ancient boulders under the Martian sun."
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Evidence of Ancient Catastrophic Floods",
+        "badge": "Discoveries",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "Imbricated boulders in Ares Vallis showing evidence of ancient mega-floods.",
+        "text": "My Imager for Mars Pathfinder (IMP) camera captured 16,500 color images. My stereo lenses spotted smooth, rounded river pebbles and tilted, stacked boulders aligned in the direction of ancient currents. This confirmed that Ares Vallis was carved billions of years ago by colossal freshwater mega-floods hundreds of times larger than the Amazon River!"
+      },
+      {
+        "chapterNumber": 5,
+        "title": "Dedicated to Carl Sagan",
+        "badge": "Current Location",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "The Carl Sagan Memorial Station resting permanently in Ares Vallis.",
+        "text": "Shortly after our landing, NASA formally dedicated me as the 'Carl Sagan Memorial Station', honoring the visionary astronomer who inspired millions to look toward the cosmos. I operated for 83 Martian sols, acting as Sojourner's radio base station. I rest permanently in Ares Vallis at coordinates 19.33° N, 33.55° W."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "The Path Finder",
+        "badge": "Closing Message",
+        "image": "https://images-assets.nasa.gov/image/PIA00010/PIA00010~orig.jpg",
+        "caption": "Sunset on Mars photographed from the Carl Sagan Memorial Station.",
+        "text": "My airbag landing technology proved so reliable that NASA used it to land the twin rovers Spirit and Opportunity in 2004. I was the Pathfinder—the station that paved the way for modern robotic Mars exploration."
+      }
+    ]
+  },
+  {
+    "id": "voyager-1",
+    "artifactId": "voyager-1",
+    "aliases": ["voyager", "voyager-1", "vgr-1"],
+    "artifactName": "Voyager 1 Spacecraft",
+    "speaker": "Voyager 1 Interstellar Spacecraft",
+    "destination": "Deep Space",
+    "destinationIcon": "🌌",
+    "mission": "Voyager Interstellar Mission",
+    "year": "1977–Present",
+    "disclaimer": "Creative narration based on verified NASA facts. Fictional persona used for educational storytelling; mission milestones, interstellar crossing dates, and working telemetry reflect official NASA Jet Propulsion Laboratory records.",
+    "nasaSourceUrl": "https://voyager.jpl.nasa.gov/",
+    "nasaSourceLabel": "NASA JPL Voyager Interstellar Mission & Telemetry Status",
+    "heroImage": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Beyond the Bounds of the Sun",
+        "badge": "Opening",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "Artist concept of Voyager 1 cruising through the interstellar medium.",
+        "text": "I am not an abandoned machine resting on an alien planet. I am an active, travelling spacecraft, hurtling through the deep interstellar void at 17 kilometers per second—over 38,000 miles per hour! I left Cape Canaveral on September 5, 1977, and have traveled farther from Earth than any object in human history."
+      },
+      {
+        "chapterNumber": 2,
+        "title": "The Grand Tour of Giant Worlds",
+        "badge": "NASA's Purpose",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "Jupiter and its volcanic moon Io photographed during Voyager 1's 1979 flyby.",
+        "text": "NASA launched me and my twin, Voyager 2, to take advantage of a rare planetary alignment occurring once every 175 years. Using gravitational slingshots, I swept past Jupiter in March 1979, discovering active sulfur volcanoes on Io and rings around Jupiter. In November 1980, I explored Saturn, revealing intricate ringlet braids and Titan's dense nitrogen smog."
+      },
+      {
+        "chapterNumber": 3,
+        "title": "A Pale Blue Dot",
+        "badge": "The Solar Portrait",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "The iconic 'Pale Blue Dot' photograph of Earth taken by Voyager 1 from 6 billion km.",
+        "text": "In February 1990, on advice from Carl Sagan, I turned my camera back toward the inner solar system from 6 billion kilometers away. I snapped 60 frames capturing our planetary family. In that image, Earth appeared as a tiny speck of dust suspended in a sunbeam—a 'Pale Blue Dot' that reminded humanity of the fragility of our only home."
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Crossing into Interstellar Space",
+        "badge": "The Heliopause",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "Voyager 1 crossing the Heliopause boundary at 121.6 AU into interstellar space.",
+        "text": "On August 25, 2012, at a distance of 121.6 Astronomical Units (18 billion kilometers), my Plasma Wave Subsystem detected a sudden drop in solar wind particles and a fortyfold surge in galactic plasma density. NASA officially confirmed the historic news: I had crossed the Heliopause to become the first human spacecraft in interstellar space!"
+      },
+      {
+        "chapterNumber": 5,
+        "title": "Whispering Across 24 Billion Kilometers",
+        "badge": "Current Telemetry",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "Voyager 1's 3.7-meter dish antenna beaming faint 20-watt signals to Earth.",
+        "text": "I am now over 163 AU (24.4 billion kilometers) from Earth. A radio signal traveling at the speed of light takes over 22.5 hours one-way just to reach the antennas of NASA's Deep Space Network! In 2024, brilliant engineers at JPL fixed a corrupted memory chip in my Flight Data System from across the cosmos, and all four of my working science instruments are actively measuring interstellar fields today."
+      },
+      {
+        "chapterNumber": 6,
+        "title": "The Golden Record into Eternity",
+        "badge": "Closing Message",
+        "image": "https://images-assets.nasa.gov/image/PIA17049/PIA17049~orig.jpg",
+        "caption": "The 12-inch gold-plated copper Voyager Golden Record mounted on the spacecraft.",
+        "text": "Bolted to my side is a 12-inch gold-plated copper phonograph record carrying greetings in 55 human languages, the music of Bach, Beethoven, and Chuck Berry, and sounds of Earth's wind, surf, and birds. Long after the Sun expands and human cities turn to dust, I will cruise the Milky Way as an eternal ambassador of humanity."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#020409" />
+  <title>NASA: Echoes Beyond Earth | The Forgotten Machines</title>
+  <meta name="description" content="Explore the historic NASA machines left on the Moon, Mars, and in deep space. An interactive educational experience for students and space enthusiasts." />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts: Space Grotesk, Orbitron, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/glassmorphism.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- Three.js CDN for 3D Celestial Graphics -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="app-preloader" class="app-preloader">
+    <div class="preloader-content">
+      <div class="preloader-nasa-badge">NASA</div>
+      <div class="preloader-title">ECHOES BEYOND EARTH</div>
+      <div class="preloader-status" id="preloader-status">INITIALIZING MISSION TELEMETRY...</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloader-bar"></div>
+      </div>
+      <div class="preloader-sub">VERIFYING NASA DEEP SPACE HARDWARE ARCHIVES</div>
+    </div>
+  </div>
+
+  <!-- Three.js 3D Celestial Background Container -->
+  <div id="celestial-canvas-container"></div>
+  <div class="space-vignette"></div>
+  <div class="cosmic-dust-overlay"></div>
+
+  <!-- Primary Application Wrapper -->
+  <div id="app">
+
+    <!-- Top Navigation Header -->
+    <header class="app-header">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-wrapper" aria-label="NASA Echoes Beyond Earth Home">
+          <div class="nasa-meatball-badge">
+            <span class="meatball-stars">NASA</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">ECHOES <span>BEYOND</span> EARTH</span>
+            <span class="brand-sub">DEEP SPACE RELIC ARCHIVE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#hero" class="nav-link active"><span>01</span> Mission</a></li>
+            <li><a href="#museum" class="nav-link"><span>02</span> Museum</a></li>
+            <li><a href="#destinations" class="nav-link"><span>03</span> Destinations</a></li>
+            <li><a href="#artifacts" class="nav-link"><span>04</span> Artifacts</a></li>
+            <li><a href="#story" class="nav-link"><span>05</span> Story Mode</a></li>
+            <li><a href="#timeline" class="nav-link"><span>06</span> Timeline</a></li>
+            <li><a href="#science" class="nav-link"><span>07</span> Science Lab</a></li>
+            <li><a href="#quiz" class="nav-link"><span>08</span> Cadet Quiz</a></li>
+            <li><a href="#sources" class="nav-link"><span>09</span> Sources & Accuracy</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Header Action Controls -->
+        <div class="header-actions">
+          <canvas id="audio-visualizer-canvas" width="60" height="18" style="vertical-align: middle; border-radius: 2px;"></canvas>
+          <button class="hud-btn" id="audio-toggle-btn" title="Toggle procedural ambient space soundscape">
+            <span class="audio-pulse"></span>
+            <span id="audio-status-label">SOUND: OFF</span>
+          </button>
+          <button class="hud-btn" id="a11y-toggle-btn" title="Accessibility & Keyboard Options" aria-label="Accessibility Settings">
+            <span>♿</span>
+            <span style="font-size: 0.7rem; margin-left: 2px;">A11Y</span>
+          </button>
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+
+      <!-- ============================================================
+           SECTION 1: HERO / LANDING PAGE
+           ============================================================ -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-mission-badge animate-fade-in-up">
+              <span class="pulse-point"></span>
+              <span>NASA ARCHIVAL EXPLORATION // DEEP SPACE HARDWARE</span>
+            </div>
+
+            <!-- React Bits ParticleText Hero Title Component -->
+            <div class="hero-particle-text-container animate-fade-in-up" id="hero-particle-text-container">
+              <!-- ParticleText canvas renders dynamically here -->
+              <h1 class="visually-hidden">NASA: ECHOES BEYOND EARTH</h1>
+            </div>
+
+            <p class="hero-tagline animate-fade-in-up">
+              "The <strong>forgotten machines</strong> that changed our understanding of space."
+            </p>
+
+            <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 760px; margin: 0 auto 2.25rem auto; line-height: 1.7;" class="animate-fade-in-up">
+              When Apollo astronauts returned home and deep space probes crossed our cosmic frontier, their machines stayed behind. Silently resting on the Moon's airless dust, enduring frozen Martian storms, and hurtling into the interstellar void, these robotic sentinels hold the historical records and scientific foundations of modern space exploration.
+            </p>
+
+            <div class="hero-cta-group animate-fade-in-up">
+              <button class="btn-primary" id="hero-explore-btn">
+                <span>Explore the Universe ❯</span>
+              </button>
+              <button class="btn-secondary" id="hero-museum-btn">
+                <span>Solar System Museum 🌌</span>
+              </button>
+              <button class="btn-secondary" id="hero-artifacts-btn">
+                <span>Preserved Artifacts 🚀</span>
+              </button>
+              <button class="btn-secondary" id="hero-timeline-btn">
+                <span>Mission Timeline ⏱️</span>
+              </button>
+            </div>
+
+            <!-- Interactive 3D Earth Navigation Indicator -->
+            <div class="hero-earth-indicator animate-fade-in-up" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: -1.75rem; margin-bottom: 2.75rem; padding: 0.35rem 1.1rem; background: rgba(0, 229, 255, 0.08); border: 1px solid rgba(0, 229, 255, 0.25); border-radius: var(--border-radius-full); font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); letter-spacing: 0.5px; backdrop-filter: blur(8px);">
+              <span style="display: inline-block; animation: pulseGlow 2s infinite;">🌐</span>
+              <span>CLICK &amp; DRAG TO ROTATE 3D EARTH • SCROLL TO JOURNEY BEYOND</span>
+            </div>
+
+            <!-- Fast Mission Telemetry Strip -->
+            <div class="hero-stats-strip animate-fade-in-up">
+              <div class="hero-stat-card glass-panel">
+                <div class="hero-stat-val">3</div>
+                <div class="hero-stat-lbl">Worlds Explored</div>
+              </div>
+              <div class="hero-stat-card glass-panel">
+                <div class="hero-stat-val">24B+ km</div>
+                <div class="hero-stat-lbl">Farthest Craft (Voyager 1)</div>
+              </div>
+              <div class="hero-stat-card glass-panel">
+                <div class="hero-stat-val">1969–Present</div>
+                <div class="hero-stat-lbl">Mission Timeline</div>
+              </div>
+              <div class="hero-stat-card glass-panel">
+                <div class="hero-stat-val">100% Verified</div>
+                <div class="hero-stat-lbl">Official NASA Data</div>
+              </div>
+            </div>
+
+            <!-- Why These Missions Matter (Educational Pillars) -->
+            <div class="hero-why-matters animate-fade-in-up">
+              <div class="hero-matters-header">
+                <span class="section-tag">EDUCATIONAL FOUNDATION</span>
+                <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; font-weight: 700; text-transform: uppercase;">
+                  Why These Forgotten Machines Matter
+                </h3>
+              </div>
+              <div class="hero-matters-grid">
+                <div class="hero-matters-card">
+                  <span class="hero-matters-icon">🔬</span>
+                  <h4>Scientific Breakthroughs</h4>
+                  <p>From discovering catastrophic floodwaters in Martian valleys to measuring the Moon's 3.8 cm annual drift with laser reflectors, these machines rewritten planetary science textbooks.</p>
+                </div>
+                <div class="hero-matters-card">
+                  <span class="hero-matters-icon">⚙️</span>
+                  <h4>Engineering Innovations</h4>
+                  <p>The Rocker-Bogie 6-wheel suspension, wire-mesh lunar tires, plutonium thermoelectric generators, and throttleable rocket engines were invented right here, powering future Artemis and Mars rovers.</p>
+                </div>
+                <div class="hero-matters-card">
+                  <span class="hero-matters-icon">🕊️</span>
+                  <h4>Human Heritage Beyond Earth</h4>
+                  <p>These silent sentinels carry mankind's greatest curiosity: immortal footprints at Tranquility Base and the Golden Record carrying Earth's music into the galaxy.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured NASA Artifacts Quick Ribbon -->
+            <div class="hero-featured-ribbon animate-fade-in-up">
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-transform: uppercase; letter-spacing: 1px;">
+                FEATURED HISTORIC HARDWARE // QUICK TELEMETRY JUMP
+              </div>
+              <div class="hero-featured-chips">
+                <button class="hero-chip-btn" data-art="apollo-11-lm-descent">🌕 Apollo 11 Lunar Module</button>
+                <button class="hero-chip-btn" data-art="apollo-lrv">🌕 Apollo Lunar Rover</button>
+                <button class="hero-chip-btn" data-art="viking-1-lander">🔴 Viking 1 Lander</button>
+                <button class="hero-chip-btn" data-art="sojourner-rover">🔴 Sojourner Rover</button>
+                <button class="hero-chip-btn" data-art="mars-pathfinder-lander">🔴 Mars Pathfinder</button>
+                <button class="hero-chip-btn" data-art="voyager-1">🌌 Voyager 1</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 2: SOLAR SYSTEM MUSEUM
+           ============================================================ -->
+      <section id="museum" class="section-wrapper museum-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">INTERACTIVE SPACE ENVIRONMENT</span>
+            <h2 class="section-title">SOLAR SYSTEM MUSEUM – EXPLORE THE FORGOTTEN MACHINES</h2>
+            <p class="section-desc">
+              Navigate the cosmic expanse from the Sun and Earth to the Moon, Mars, and interstellar space. Select any celestial world to inspect the historic NASA machines resting on its surface or voyaging through the void.
+            </p>
+          </div>
+
+          <!-- Interactive Space Canvas & Viewport Card -->
+          <div class="museum-viewport-card">
+            <div class="museum-canvas-wrap">
+              <canvas id="museum-canvas"></canvas>
+
+              <!-- Canvas HUD Overlay -->
+              <div class="museum-canvas-hud">
+                <div class="museum-canvas-hud-left">
+                  <div class="museum-hud-tag">
+                    <span class="telemetry-dot"></span>
+                    <span id="museum-mode-title">SOLAR SYSTEM // INTERACTIVE 3D SIMULATOR</span>
+                  </div>
+                  <div class="museum-hud-tag" style="color: var(--text-muted); font-size: 0.68rem;">
+                    <span>🖱️ Drag to orbit/pan • Scroll to zoom • Click planet to fly</span>
+                  </div>
+                </div>
+
+                <div class="museum-canvas-hud-right">
+                  <button class="museum-ctrl-btn" id="museum-tour-btn" title="Launch Automated 3D Cinematic Grand Tour">🚀 Grand Tour</button>
+                  <button class="museum-ctrl-btn active" id="museum-view-3d-btn" title="Switch to 3D Space View">🌐 3D</button>
+                  <button class="museum-ctrl-btn" id="museum-view-2d-btn" title="Switch to 2D Orbital Map">🗺️ 2D</button>
+                  <button class="museum-ctrl-btn" id="museum-zoom-in" title="Zoom In">+</button>
+                  <button class="museum-ctrl-btn" id="museum-zoom-out" title="Zoom Out">−</button>
+                  <button class="museum-ctrl-btn" id="museum-reset-cam" title="Reset Camera View">⟲ Reset</button>
+                  <button class="museum-ctrl-btn" id="museum-pause-motion" title="Freeze Orbital Motion"><span>⏸ Freeze Orbit</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Destination Select Tabs Bar -->
+            <div class="museum-tabs-row">
+              <button class="museum-dest-tab active" data-dest="moon">
+                <span>🌕 The Moon (2 Preserved Relics)</span>
+              </button>
+              <button class="museum-dest-tab" data-dest="mars">
+                <span>🔴 Mars (3 Historic Landers)</span>
+              </button>
+              <button class="museum-dest-tab" data-dest="deep-space">
+                <span>🌌 Deep Space (Voyager 1 Interstellar)</span>
+              </button>
+              <button class="museum-dest-tab" data-dest="sun-earth">
+                <span>☀️ Sun & Earth (Solar Origin)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Destination Spotlight & Artifact Showcase Panel -->
+          <div id="museum-detail-panel" class="museum-detail-panel">
+            <!-- Dynamically populated by SolarSystemMuseum.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 3: DESTINATION EXPLORER
+           ============================================================ -->
+      <section id="destinations" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">DESTINATION DIRECTORY</span>
+            <h2 class="section-title">CHOOSE YOUR DESTINATION</h2>
+            <p class="section-desc">
+              Every celestial body holds a distinct chapter of human history. Select a world to inspect its environment and uncover the relics resting upon its surface.
+            </p>
+          </div>
+
+          <!-- Destination Selector Tabs -->
+          <div class="destination-tabs">
+            <button class="dest-tab-btn active" data-destination="moon">
+              <span class="dest-tab-icon dest-moon-icon"></span>
+              <span>🌕 Moon</span>
+            </button>
+            <button class="dest-tab-btn" data-destination="mars">
+              <span class="dest-tab-icon dest-mars-icon"></span>
+              <span>🔴 Mars</span>
+            </button>
+            <button class="dest-tab-btn" data-destination="deep-space">
+              <span class="dest-tab-icon dest-deep-icon"></span>
+              <span>🌌 Deep Space</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Destination Spotlight Panel -->
+          <div class="destination-spotlight">
+            
+            <!-- Left: Interactive 3D Planet Globe Viewport & Surface Landing Map -->
+            <div class="destination-visual-panel glass-hud">
+              <div class="destination-planet-viewport" id="destination-globe-viewport">
+                <!-- Three.js 3D planet sphere renders here -->
+              </div>
+              <div class="destination-map-viewport" id="destination-map-viewport" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+                <!-- 2D Surface Cartography canvas renders here -->
+              </div>
+              <div class="destination-surface-viewport" id="destination-surface-viewport" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+                <!-- Three.js 3D Planetary Surface & Hardware renders here -->
+              </div>
+              <div class="destination-visual-overlay">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="dest-header-badge">PLANETARY TELEMETRY</span>
+                  <div style="display: flex; gap: 0.35rem; pointer-events: auto;">
+                    <button class="filter-btn active" id="dest-view-globe-btn" style="padding: 0.2rem 0.55rem; font-size: 0.68rem;">🌐 3D Globe</button>
+                    <button class="filter-btn" id="dest-view-surface-btn" style="padding: 0.2rem 0.55rem; font-size: 0.68rem;">🪐 3D Surface</button>
+                    <button class="filter-btn" id="dest-view-map-btn" style="padding: 0.2rem 0.55rem; font-size: 0.68rem;">🗺️ Landing Map</button>
+                  </div>
+                </div>
+                <!-- Destination ParticleText Heading -->
+                <div class="dest-particle-text-container" id="dest-particle-text-container">
+                  <h3 class="visually-hidden" id="dest-name-display">The Moon</h3>
+                </div>
+                <p class="dest-tagline-text" id="dest-tagline-display">The airless museum of early Earth and human footprints.</p>
+                <!-- Landing Sites Navigator (Active in 3D Surface View) -->
+                <div class="dest-sites-bar" id="dest-sites-bar" style="display: none; margin-top: 0.65rem; gap: 0.35rem; flex-wrap: wrap; pointer-events: auto;">
+                  <!-- Dynamically populated by app.js based on active destination -->
+                </div>
+              </div>
+              <div class="dest-interactive-hint" id="dest-viewport-hint">
+                <span>🖱️ Click & Drag to rotate 3D sphere</span>
+              </div>
+            </div>
+
+            <!-- Right: Environmental Metrics & Relic Catalog Info -->
+            <div class="destination-info-panel glass-hud">
+              <div>
+                <div class="telemetry-tag" style="margin-bottom: 0.75rem;">
+                  <span class="telemetry-dot"></span> ORBITAL DATA SUMMARY
+                </div>
+                <p class="dest-overview-text" id="dest-overview-display">
+                  Earth's only natural satellite. With no atmosphere, liquid water, or weather to erode its surface, every footprint, wheel tread, and descent stage left by NASA remains frozen in time.
+                </p>
+
+                <!-- Environmental Metrics Grid -->
+                <div class="dest-telemetry-grid">
+                  <div class="dest-metric-card">
+                    <div class="dest-metric-label">📏 Distance from Earth</div>
+                    <div class="dest-metric-val" id="dest-dist-val">384,400 km</div>
+                  </div>
+                  <div class="dest-metric-card">
+                    <div class="dest-metric-label">⚖️ Surface Gravity</div>
+                    <div class="dest-metric-val" id="dest-grav-val">1.62 m/s² (16.6% Earth)</div>
+                  </div>
+                  <div class="dest-metric-card">
+                    <div class="dest-metric-label">🌡️ Temperature Range</div>
+                    <div class="dest-metric-val" id="dest-temp-val">-130°C to +120°C</div>
+                  </div>
+                  <div class="dest-metric-card">
+                    <div class="dest-metric-label">💨 Atmospheric Pressure</div>
+                    <div class="dest-metric-val" id="dest-atmo-val">Near-vacuum (Exosphere)</div>
+                  </div>
+                </div>
+
+                <div style="background: rgba(0, 229, 255, 0.05); padding: 0.85rem 1rem; border-left: 3px solid var(--cyan-glow); border-radius: 0 8px 8px 0; margin-bottom: 1.5rem;">
+                  <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-transform: uppercase;">FAMOUS WORDS</div>
+                  <div id="dest-quote-display" style="font-style: italic; color: #fff; font-size: 0.95rem; margin-top: 0.25rem;">
+                    "That's one small step for man, one giant leap for mankind."
+                  </div>
+                </div>
+              </div>
+
+              <!-- Call to Action -->
+              <div class="dest-actions">
+                <button class="btn-primary" id="dest-view-artifacts-btn">
+                  <span>Explore Destination Hardware ❯</span>
+                </button>
+                <div class="telemetry-tag" style="align-self: center;">
+                  <span id="dest-count-val">2 Documented Relics</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 3: ARTIFACT EXPLORER
+           ============================================================ -->
+      <section id="artifacts" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">HARDWARE TELEMETRY CATALOG</span>
+            <h2 class="section-title">THE FORGOTTEN MACHINES</h2>
+            <p class="section-desc">
+              Authentic NASA spacecraft, landers, and rovers permanently positioned beyond Earth. Verified against official NASA mission logs and planetary cartography.
+            </p>
+          </div>
+
+          <!-- Filter Toolbar -->
+          <div class="artifact-toolbar">
+            <div class="artifact-filters">
+              <button class="filter-btn active" data-filter="all">All Destinations</button>
+              <button class="filter-btn" data-filter="moon">🌕 Moon</button>
+              <button class="filter-btn" data-filter="mars">🔴 Mars</button>
+              <button class="filter-btn" data-filter="deep-space">🌌 Deep Space</button>
+            </div>
+            <div class="artifact-search-box">
+              <span class="artifact-search-icon">🔍</span>
+              <input type="text" id="artifact-search-input" class="glass-input" placeholder="Search mission, rover, coordinates..." />
+            </div>
+          </div>
+
+          <!-- Artifact Cards Grid -->
+          <div class="artifacts-grid" id="artifacts-grid">
+            <!-- Dynamically populated by ArtifactExplorer.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 4: STORY MODE ("ECHOES FROM THE VOID")
+           ============================================================ -->
+      <section id="story" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">FIRST-PERSON CREATIVE LOGS</span>
+            <h2 class="section-title">MISSION STORY MODE – VOICES FROM SPACE</h2>
+            <p class="section-desc">
+              Select any of the six NASA artifacts and experience its epic journey as a short, cinematic story told from the machine's own perspective.
+            </p>
+          </div>
+
+          <div class="story-terminal-wrapper">
+            <!-- Story Selector Pills -->
+            <div class="story-selector-bar" id="story-selector-bar">
+              <!-- Dynamically populated -->
+            </div>
+
+            <!-- Terminal Reader Screen -->
+            <div id="story-terminal-content">
+              <!-- Dynamically populated by StoryMode.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 5: MISSION TIMELINE
+           ============================================================ -->
+      <section id="timeline" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">CHRONOLOGICAL ARCHIVE</span>
+            <h2 class="section-title">MISSION TIMELINE – THE JOURNEY THROUGH TIME</h2>
+            <p class="section-desc">
+              Explore the historic sequence of NASA's greatest missions from the 1969 Apollo Moon landing to Voyager's voyage through interstellar space.
+            </p>
+          </div>
+
+          <!-- Timeline Filters -->
+          <div class="timeline-filters-bar">
+            <button class="filter-btn active" data-filter="all">All Missions</button>
+            <button class="filter-btn" data-filter="moon">🌕 Moon</button>
+            <button class="filter-btn" data-filter="mars">🔴 Mars</button>
+            <button class="filter-btn" data-filter="deep-space">🌌 Deep Space</button>
+          </div>
+
+          <!-- Horizontal Timeline Rail & Detail Inspection Panel -->
+          <div class="timeline-chronology" id="timeline-chronology">
+            <!-- Dynamically populated by Timeline.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 6: SCIENCE DISCOVERIES & LAB
+           ============================================================ -->
+      <section id="science" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">EDUCATIONAL SCIENCE LAB</span>
+            <h2 class="section-title">WHAT THE MACHINES TAUGHT US</h2>
+            <p class="section-desc">
+              Scientific breakthroughs made possible by these machines, explained simply with physics, geology, and interactive calculation tools.
+            </p>
+          </div>
+
+          <!-- Science Discovery Cards Grid -->
+          <div class="science-grid" id="science-discoveries-grid">
+            <!-- Dynamically populated by ScienceMode.js -->
+          </div>
+
+          <!-- Interactive Student Mini-Labs -->
+          <div class="science-lab-wrapper glass-hud">
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+              <span class="telemetry-dot"></span>
+              <h3 class="science-lab-title">INTERACTIVE STUDENT MINI-LABS</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Test cosmic physics yourself with real mission equations.
+            </p>
+
+            <div class="science-tools-grid">
+              
+              <!-- Tool 1: Lunar Laser Drift Calculator -->
+              <div class="tool-calculator-box">
+                <h4>🌙 Lunar Laser Drift Calculator</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                  Using Apollo 11's Laser Retroreflector, calculate how much farther the Moon has drifted from Earth since a specific year!
+                </p>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="drift-year-input" class="glass-input" value="2008" min="1969" max="2026" placeholder="Year (e.g. 2010)" />
+                  <button class="btn-primary" id="calc-drift-btn" style="padding: 0.6rem 1rem;">Calculate</button>
+                </div>
+                <div class="calc-result-display" id="drift-result-display">
+                  Enter a year above and click Calculate to view lunar orbital drift.
+                </div>
+              </div>
+
+              <!-- Tool 2: Speed-of-Light Radio Delay Calculator -->
+              <div class="tool-calculator-box">
+                <h4>📡 Deep Space Radio Ping Calculator</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                  Radio signals travel at the speed of light (299,792 km/s). See how long your signal takes to reach these distant machines!
+                </p>
+                <div style="display: flex; gap: 0.5rem;">
+                  <select id="radio-target-select" class="glass-input" style="cursor: pointer;">
+                    <option value="moon">The Moon (Apollo 11)</option>
+                    <option value="mars-close">Mars (Closest Approach)</option>
+                    <option value="mars-far">Mars (Farthest Opposition)</option>
+                    <option value="voyager1">Voyager 1 (Interstellar Space)</option>
+                  </select>
+                  <button class="btn-primary" id="calc-radio-btn" style="padding: 0.6rem 1rem;">Ping</button>
+                </div>
+                <div class="calc-result-display" id="radio-result-display">
+                  Select a destination and click Ping to compute signal delay.
+                </div>
+              </div>
+
+              <!-- Tool 3: Voyager 1 Live Interstellar Telemetry Odometer -->
+              <div class="tool-calculator-box" style="grid-column: 1 / -1;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <h4>🛰️ Voyager 1 Real-Time Interstellar Odometer</h4>
+                  <span class="status-pill active" style="font-size: 0.7rem;"><span class="status-dot"></span> LIVE TELEMETRY</span>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                  Traveling at ~17.0 km/s relative to the Sun, Voyager 1 is the farthest human artifact. Watch its cosmic coordinates advance in real-time:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                  <div style="background: rgba(0,0,0,0.4); padding: 0.85rem 1rem; border-radius: var(--border-radius-sm); border: 1px solid rgba(0, 229, 255, 0.2);">
+                    <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Distance from Sun (km)</div>
+                    <div id="voyager-live-km" style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--cyan-glow); margin-top: 0.25rem;">Calculating...</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.4); padding: 0.85rem 1rem; border-radius: var(--border-radius-sm); border: 1px solid rgba(0, 229, 255, 0.2);">
+                    <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Distance (AU)</div>
+                    <div id="voyager-live-au" style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #fff; margin-top: 0.25rem;">Calculating...</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.4); padding: 0.85rem 1rem; border-radius: var(--border-radius-sm); border: 1px solid rgba(0, 229, 255, 0.2);">
+                    <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">One-Way Light Delay</div>
+                    <div id="voyager-live-delay" style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--solar-gold); margin-top: 0.25rem;">Calculating...</div>
+                  </div>
+                  <div style="background: rgba(0,0,0,0.4); padding: 0.85rem 1rem; border-radius: var(--border-radius-sm); border: 1px solid rgba(0, 229, 255, 0.2);">
+                    <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Remaining RTG Power</div>
+                    <div id="voyager-live-power" style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: #a78bfa; margin-top: 0.25rem;">Calculating...</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool 4: Rocker-Bogie Suspension Interactive Physics Simulator -->
+              <div class="tool-calculator-box" style="grid-column: 1 / -1;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <h4>🤖 Rocker-Bogie Suspension Physics Simulator</h4>
+                  <div class="telemetry-tag">
+                    CHASSIS PITCH: <span id="bogie-chassis-angle" style="color: #fff; font-weight: 700; margin-left: 4px;">0° (Level)</span>
+                  </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                  Slide the obstacle slider to drive Sojourner's wheels over a Martian rock. Notice how the central differential cuts chassis tilt in half to prevent tipping:
+                </p>
+                <div style="background: rgba(4, 9, 22, 0.9); border-radius: var(--border-radius-sm); border: 1px solid rgba(0, 229, 255, 0.25); overflow: hidden; margin-bottom: 1rem;">
+                  <canvas id="rocker-bogie-canvas" style="width: 100%; height: 240px; display: block;"></canvas>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                  <label for="bogie-rock-slider" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+                    Adjust Boulder Height:
+                  </label>
+                  <input type="range" id="bogie-rock-slider" min="0" max="60" value="35" style="flex: 1; min-width: 180px; accent-color: var(--cyan-glow);" />
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow);">Drag to simulate climbing</span>
+                </div>
+              </div>
+
+              <!-- Tool 5: Voyager Golden Record Interactive Decoder -->
+              <div class="tool-calculator-box" style="grid-column: 1 / -1;">
+                <h4 style="margin-bottom: 0.5rem;">📀 The Golden Record: Extraterrestrial Message Decoder</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                  Click the diagram hotspots below to decode how Carl Sagan's team engraved humanity's message to alien civilizations:
+                </p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                  <button class="filter-btn record-hotspot active" data-hotspot="hydrogen">⚛️ Hydrogen Atom Clock</button>
+                  <button class="filter-btn record-hotspot" data-hotspot="pulsar">🧭 14-Pulsar Map</button>
+                  <button class="filter-btn record-hotspot" data-hotspot="stylus">🪡 Stylus & Speed</button>
+                  <button class="filter-btn record-hotspot" data-hotspot="waveforms">🖼️ Image Scan Waveforms</button>
+                </div>
+                <div style="background: rgba(0,0,0,0.5); padding: 1.25rem; border-radius: var(--border-radius-sm); border-left: 3px solid var(--solar-gold);">
+                  <div id="record-info-title" style="font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.35rem;">
+                    Fundamental Hydrogen Time & Distance Unit
+                  </div>
+                  <div id="record-info-desc" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    At the bottom right is a drawing of the neutral hydrogen atom in its two lowest states. The transition between these states emits radio waves with a period of 0.704 nanoseconds and wavelength of 21 centimeters—the universal galactic metric system!
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool 6: Interactive Spacecraft Comparative Matrix & Alien Gravity Physics (Phase 7) -->
+              <div class="tool-calculator-box" style="grid-column: 1 / -1; margin-top: 0.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <h4>⚖️ Spacecraft Comparative Matrix &amp; Alien Gravity Weight</h4>
+                  <div class="telemetry-tag">
+                    <span class="telemetry-dot"></span> W = m · g GRAVITY ENGINE
+                  </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                  Select any two historical NASA machines to compare their launch mass, alien gravity weight, power architecture, speed, and scientific instruments side-by-side:
+                </p>
+
+                <!-- Selectors Row -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+                  <div>
+                    <label for="compare-craft-a" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); display: block; margin-bottom: 0.35rem;">SPACECRAFT A:</label>
+                    <select id="compare-craft-a" class="hud-select" style="width: 100%; padding: 0.6rem; background: rgba(8, 17, 36, 0.9); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: var(--border-radius-sm); color: #fff; font-family: var(--font-mono); font-size: 0.85rem;">
+                      <option value="apollo-11-lm-descent">Apollo 11 Lunar Module</option>
+                      <option value="apollo-lrv">Apollo Lunar Roving Vehicle</option>
+                      <option value="viking-1-lander">Viking 1 Lander</option>
+                      <option value="sojourner-rover" selected>Sojourner Rover</option>
+                      <option value="mars-pathfinder-lander">Mars Pathfinder Lander</option>
+                      <option value="voyager-1">Voyager 1 Spacecraft</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="compare-craft-b" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--solar-gold); display: block; margin-bottom: 0.35rem;">SPACECRAFT B:</label>
+                    <select id="compare-craft-b" class="hud-select" style="width: 100%; padding: 0.6rem; background: rgba(8, 17, 36, 0.9); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: var(--border-radius-sm); color: #fff; font-family: var(--font-mono); font-size: 0.85rem;">
+                      <option value="apollo-11-lm-descent">Apollo 11 Lunar Module</option>
+                      <option value="apollo-lrv" selected>Apollo Lunar Roving Vehicle</option>
+                      <option value="viking-1-lander">Viking 1 Lander</option>
+                      <option value="sojourner-rover">Sojourner Rover</option>
+                      <option value="mars-pathfinder-lander">Mars Pathfinder Lander</option>
+                      <option value="voyager-1">Voyager 1 Spacecraft</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Comparison Cards Side-by-Side Display -->
+                <div id="compare-matrix-display" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                  <!-- Dynamically populated by ScienceMode -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 7: KNOWLEDGE QUIZ
+           ============================================================ -->
+      <section id="quiz" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">COSMIC CADET ACADEMY</span>
+            <h2 class="section-title">COSMIC CHALLENGE – TEST YOUR SPACE KNOWLEDGE</h2>
+            <p class="section-desc">
+              Answer 15 interactive questions crafted around NASA hardware, landing sites, and scientific discoveries to earn your official flight certification.
+            </p>
+          </div>
+
+          <div class="quiz-wrapper">
+            <!-- Quiz HUD Bar -->
+            <div class="quiz-hud-bar glass-hud">
+              <div class="quiz-score-meter">
+                <span class="telemetry-tag">
+                  SCORE: <strong id="quiz-score-val" style="color: #fff; margin-left: 4px;">0 pts</strong> / 150 pts max
+                </span>
+                <div class="quiz-progress-track">
+                  <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+                </div>
+              </div>
+              <div class="telemetry-tag">
+                <span class="telemetry-dot"></span> EVALUATION IN PROGRESS (<span id="quiz-total-val">15</span> QUESTIONS)
+              </div>
+            </div>
+
+            <!-- Quiz Card Content -->
+            <div id="quiz-card-content">
+              <!-- Dynamically populated by QuizEngine.js -->
+            </div>
+
+            <!-- Certificate View (Shown upon quiz completion) -->
+            <div class="quiz-certificate-view" id="quiz-certificate-view">
+              <!-- Dynamically populated by QuizEngine.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 8: SOURCES & SCIENTIFIC ACCURACY
+           ============================================================ -->
+      <section id="sources" class="section-wrapper sources-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">NASA RESEARCH AUDIT & CITATIONS</span>
+            <h2 class="section-title">SOURCES & SCIENTIFIC ACCURACY</h2>
+            <p class="section-desc">
+              Every launch date, planetary landing coordinate, engineering specification, and discovery documented in Echoes Beyond Earth is audited and verified against official NASA databases and mission archives.
+            </p>
+          </div>
+
+          <!-- Fact-Check Audit Status Badge -->
+          <div style="display: flex; gap: 0.75rem; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <div class="telemetry-tag" style="background: rgba(16, 185, 129, 0.15); border-color: #10b981; color: #10b981;">
+              <span class="telemetry-dot" style="background: #10b981;"></span> LAST FACT-CHECKED: NOVEMBER 2026
+            </div>
+            <div class="telemetry-tag">
+              <span class="telemetry-dot"></span> NASA PDS & JPL FLIGHT TELEMETRY AUDIT
+            </div>
+            <div class="telemetry-tag" style="background: rgba(0, 229, 255, 0.15); border-color: var(--cyan-glow); color: var(--cyan-glow);">
+              <span>100% VERIFIED HISTORICAL CITATIONS</span>
+            </div>
+          </div>
+
+          <!-- Official NASA Reference Repositories -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;">
+            <div class="glass-hud" style="padding: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-glow); margin-bottom: 0.25rem;">OFFICIAL PORTAL</div>
+              <h4 style="font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 0.4rem;">NASA Science & History</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.75rem;">
+                Official agency historical summaries, mission chronologies, and educational mission profiles.
+              </p>
+              <a href="https://science.nasa.gov/" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-decoration: underline;">science.nasa.gov ↗</a>
+            </div>
+
+            <div class="glass-hud" style="padding: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-glow); margin-bottom: 0.25rem;">DEEP SPACE ARCHIVES</div>
+              <h4 style="font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 0.4rem;">NASA Jet Propulsion Lab (JPL)</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.75rem;">
+                Technical flight logs for Viking 1, Mars Pathfinder, Sojourner, and real-time Voyager 1 telemetry.
+              </p>
+              <a href="https://www.jpl.nasa.gov/missions" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-decoration: underline;">jpl.nasa.gov/missions ↗</a>
+            </div>
+
+            <div class="glass-hud" style="padding: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-glow); margin-bottom: 0.25rem;">MASTER CATALOG</div>
+              <h4 style="font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 0.4rem;">NASA Space Science Archive (NSSDCA)</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.75rem;">
+                Curated spacecraft trajectories, hardware registry numbers, and instrument payload documentation.
+              </p>
+              <a href="https://nssdc.gsfc.nasa.gov/" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-decoration: underline;">nssdc.gsfc.nasa.gov ↗</a>
+            </div>
+
+            <div class="glass-hud" style="padding: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan-glow); margin-bottom: 0.25rem;">LUNAR AIR-TO-GROUND</div>
+              <h4 style="font-family: var(--font-display); font-size: 1.05rem; color: #fff; margin-bottom: 0.4rem;">Apollo Lunar Surface Journal (ALSJ)</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.75rem;">
+                Verbatim radio communication transcripts, photographic catalogs, and Rover Operations Handbooks.
+              </p>
+              <a href="https://www.nasa.gov/history/alsj/" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan-glow); text-decoration: underline;">nasa.gov/history/alsj ↗</a>
+            </div>
+          </div>
+
+          <!-- Detailed Mission Fact-Check Citations Table -->
+          <div class="glass-hud" style="padding: 1.5rem; overflow-x: auto;">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-glow); text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 1px;">
+              🔍 AUDITED SCIENTIFIC CLAIMS & VERIFIED FACT SHEET
+            </div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(0, 229, 255, 0.3); color: #fff; font-family: var(--font-mono); font-size: 0.75rem;">
+                  <th style="padding: 0.75rem 0.5rem;">HARDWARE</th>
+                  <th style="padding: 0.75rem 0.5rem;">CORE VERIFIED FACTS</th>
+                  <th style="padding: 0.75rem 0.5rem;">CRITICAL SCIENTIFIC CLARIFICATION</th>
+                  <th style="padding: 0.75rem 0.5rem;">NASA SOURCE REFERENCE</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-main); line-height: 1.6;">
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Apollo 11 LM Descent Stage<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA ID: 1969-059C</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    Landed July 20, 1969 at 20:17:40 UTC in Mare Tranquillitatis (0.67408° N, 23.47297° E). Served as stationary launch pad for Ascent Stage.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #cbd5e1;">
+                    Descent stage remained on the Moon; Ascent stage crashed into the Moon after rendezvous. LRRR retroreflector array requires zero power and is still active today.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://www.nasa.gov/mission/apollo-11/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">NASA Apollo 11 Mission ↗</a>
+                  </td>
+                </tr>
+
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Apollo Lunar Roving Vehicles<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA: 1971-063D</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    Three rovers used during Apollo 15, 16, and 17 (1971–1972). Traversed 90.3 km total; collected 280+ kg of samples including the 4.1-billion-year-old Genesis Rock.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #cbd5e1;">
+                    Apollo 11 had NO rover. Exactly three rovers were driven on the Moon, and all three remain parked on the lunar surface.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://www.nasa.gov/history/alsj/lrvhand.html" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">ALSJ LRV Operations ↗</a>
+                  </td>
+                </tr>
+
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Viking 1 Lander<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA ID: 1975-075C</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    First successful U.S. Mars lander, touching down July 20, 1976 on Chryse Planitia (22.48° N, 47.97° W). Operated for 2,245 sols until Nov 1982.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #fca5a5;">
+                    Viking 1 DID NOT discover life on Mars. Soil gas release was caused by inorganic chemical oxidants (perchlorates), with zero organic molecules detected by GCMS.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://www.jpl.nasa.gov/missions/viking-1" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">NASA JPL Viking 1 ↗</a>
+                  </td>
+                </tr>
+
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Sojourner Rover<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA ID: 1996-068B</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    First mobile rover driven on Mars (July 5, 1997 in Ares Vallis). Mass 11.5 kg; Rocker-Bogie suspension; APXS discovered andesite volcanic rocks.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #cbd5e1;">
+                    Planned for only 7 Martian sols; operated for 83 Martian sols (85 Earth days), nearly 12 times its design requirement.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://www.jpl.nasa.gov/missions/mars-pathfinder-sojourner" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">JPL Sojourner Archive ↗</a>
+                  </td>
+                </tr>
+
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Mars Pathfinder Lander<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA ID: 1996-068A</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    Landed July 4, 1997 via 24 Kevlar airbags. Delivered Sojourner. IMP camera proved catastrophic ancient mega-floods in Ares Vallis.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #cbd5e1;">
+                    Pathfinder and Sojourner are two distinct pieces of hardware. Renamed the 'Carl Sagan Memorial Station' upon landing.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://science.nasa.gov/mission/mars-pathfinder/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">NASA Science Pathfinder ↗</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0.75rem 0.5rem; font-weight: 700; color: #fff;">
+                    Voyager 1 Spacecraft<br>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-glow);">NSSDCA ID: 1977-084A</span>
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    Launched Sept 5, 1977. Crossed Heliopause into interstellar space on Aug 25, 2012 (121.6 AU). Currently > 163 AU (> 24.4 billion km) from Earth.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem; color: #6ee7b7;">
+                    NOT an abandoned object on a planet! It is STILL TRAVELLING at ~17 km/s through interstellar space; all 4 working science instruments were restored in 2024.
+                  </td>
+                  <td style="padding: 0.75rem 0.5rem;">
+                    <a href="https://voyager.jpl.nasa.gov/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-glow); text-decoration: underline;">Voyager Interstellar Mission ↗</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+         ARTIFACT DEEP DIVE MODAL
+         ============================================================ -->
+    <div class="modal-overlay" id="artifact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-container">
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <div class="modal-header-banner">
+          <!-- Banner image and titles injected by ArtifactExplorer.js -->
+        </div>
+        <div class="modal-content-body">
+          <!-- Full telemetry and discoveries injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Application Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h4>NASA: ECHOES BEYOND EARTH</h4>
+            <p>
+              An interactive educational project honoring the robotic pioneers and crewed vehicles that expanded human knowledge across the Moon, Mars, and interstellar space.
+            </p>
+            <div class="telemetry-tag">
+              <span class="telemetry-dot"></span> BUILT FOR SPACE SCIENCE EDUCATORS & STUDENTS
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h5>Exploration</h5>
+            <ul>
+              <li><a href="#hero">Mission Overview</a></li>
+              <li><a href="#destinations">Destination Explorer</a></li>
+              <li><a href="#artifacts">Hardware Catalog</a></li>
+              <li><a href="#story">Story Mode Logs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h5>Science & Learning</h5>
+            <ul>
+              <li><a href="#timeline">Mission Timeline</a></li>
+              <li><a href="#science">Science Discoveries Lab</a></li>
+              <li><a href="#quiz">Cadet Knowledge Quiz</a></li>
+              <li><a href="#sources">Sources & Accuracy</a></li>
+              <li><a href="https://www.nasa.gov" target="_blank" rel="noopener">NASA Official Portal ↗</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; NASA: Echoes Beyond Earth. Educational Space Science Project.
+          </div>
+          <div class="footer-disclaimer">
+            Hardware data, historical timelines, and planetary coordinates verified via NASA Public Planetary Data System (PDS).
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Back to Home / Top" aria-label="Back to Top">
+    <span>▲</span>
+    <span>TOP</span>
+  </button>
+
+  <!-- ============================================================
+       ACCESSIBILITY & KEYBOARD SETTINGS MODAL
+       ============================================================ -->
+  <div class="modal-overlay" id="a11y-modal" role="dialog" aria-modal="true" aria-labelledby="a11y-modal-title">
+    <div class="a11y-modal-content">
+      <button class="modal-close-btn" id="a11y-close-btn" aria-label="Close Accessibility Settings">✕</button>
+      
+      <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem;">
+        <span style="font-size: 1.5rem;">♿</span>
+        <div>
+          <h3 id="a11y-modal-title" style="font-family: var(--font-display); font-size: 1.25rem; color: #fff; font-weight: 800;">
+            ACCESSIBILITY & CONTROLS
+          </h3>
+          <p style="font-size: 0.8rem; color: var(--cyan-glow); font-family: var(--font-mono);">
+            CUSTOMIZE DISPLAY, AUDIO & KEYBOARD SHORTCUTS
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 1: Text Size Adjustment -->
+      <div class="a11y-section">
+        <div class="a11y-section-title"><span>🔤</span> Text Size</div>
+        <div class="a11y-btn-group" id="text-size-controls">
+          <button class="a11y-opt-btn active" data-size="normal">Normal (100%)</button>
+          <button class="a11y-opt-btn" data-size="large">Large (115%)</button>
+          <button class="a11y-opt-btn" data-size="xlarge">Extra Large (130%)</button>
+        </div>
+      </div>
+
+      <!-- Section 2: Contrast & Visual Preferences -->
+      <div class="a11y-section">
+        <div class="a11y-section-title"><span>👁️</span> Visual Contrast & Motion</div>
+        <div class="a11y-btn-group">
+          <button class="a11y-opt-btn" id="toggle-contrast-btn">High Contrast: OFF</button>
+          <button class="a11y-opt-btn" id="toggle-motion-btn">Reduced Motion: OFF</button>
+        </div>
+      </div>
+
+      <!-- Section 3: Space Soundscape Volume & Quindar Test -->
+      <div class="a11y-section">
+        <div class="a11y-section-title"><span>🔊</span> Space Audio & Synthesizer Controls</div>
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+          Procedural Web Audio synthesizer (ambient drone, Quindar tones & beeps). Sound is OFF by default.
+        </p>
+        <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+          <label for="audio-volume-slider" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">Volume:</label>
+          <input type="range" id="audio-volume-slider" min="0" max="100" value="70" style="flex: 1; min-width: 140px; accent-color: var(--cyan-glow);" />
+          <button class="btn-secondary" id="test-quindar-btn" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">
+            <span>Test Quindar Beep</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 4: Keyboard Shortcuts Reference -->
+      <div class="a11y-section">
+        <div class="a11y-section-title"><span>⌨️</span> Keyboard Navigation Shortcuts</div>
+        <table class="kbd-shortcut-table">
+          <tbody>
+            <tr><td><span class="kbd-badge">1</span></td><td>Jump to Home / Mission</td></tr>
+            <tr><td><span class="kbd-badge">2</span></td><td>Jump to Solar System Museum</td></tr>
+            <tr><td><span class="kbd-badge">3</span></td><td>Jump to Explore Destinations</td></tr>
+            <tr><td><span class="kbd-badge">4</span></td><td>Jump to Artifact Explorer</td></tr>
+            <tr><td><span class="kbd-badge">5</span></td><td>Jump to Mission Story Mode</td></tr>
+            <tr><td><span class="kbd-badge">6</span></td><td>Jump to Mission Timeline</td></tr>
+            <tr><td><span class="kbd-badge">7</span></td><td>Jump to Science Lab</td></tr>
+            <tr><td><span class="kbd-badge">8</span></td><td>Jump to Cosmic Challenge Quiz</td></tr>
+            <tr><td><span class="kbd-badge">M</span></td><td>Toggle Space Ambiance Audio (On/Off)</td></tr>
+            <tr><td><span class="kbd-badge">T</span></td><td>Cycle Text Size (Normal / Large / Extra Large)</td></tr>
+            <tr><td><span class="kbd-badge">C</span></td><td>Toggle High Contrast Mode</td></tr>
+            <tr><td><span class="kbd-badge">?</span></td><td>Open Accessibility & Shortcuts Help</td></tr>
+            <tr><td><span class="kbd-badge">Esc</span></td><td>Close Active Modal / Settings</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Application Script (ES Module) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+
